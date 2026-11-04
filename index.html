@@ -3,18 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--
-  ============================================================
-  À PERSONNALISER AVANT MISE EN LIGNE (Ctrl+F sur ces valeurs) :
-  - quentin.bertails@free.fr   -> ton adresse email
-  - 07 68 83 41 50 / +33768834150 -> ton numéro
-  - Les prix "à partir de" (490 €, 890 €, 29 €/mois) sont provisoires
-  - Mentions légales : statut, SIRET, adresse complète
-  - FORM_ENDPOINT (en bas, dans le script) : laisse vide pour ouvrir
-    la messagerie du visiteur, ou colle ton URL Formspree
-    (https://formspree.io/f/xxxxxx) pour un vrai formulaire.
-  ============================================================
--->
 <title>Création de sites web dans les Landes | Quentin Bertails</title>
 <meta name="description" content="Création, refonte, maintenance et hébergement de sites web pour les commerces et activités de loisirs des Landes. Devis gratuit.">
 <meta name="theme-color" content="#1D6A4C">
@@ -22,24 +10,145 @@
 <meta property="og:title" content="Quentin Bertails – Création de sites web dans les Landes">
 <meta property="og:description" content="Sites vitrines, refontes, maintenance et hébergement pour les commerces locaux. Devis gratuit.">
 <meta property="og:locale" content="fr_FR">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2216%22 fill=%22%231D6A4C%22/%3E%3Cpath d=%22M23.77 47.81Q21.70 47.81 20.68 46.87Q19.67 45.94 19.67 44.10V42.53Q17.94 42.22 16.53 41.43Q14.19 40.13 12.93 37.72Q11.66 35.30 11.66 32.0Q11.66 28.67 12.93 26.27Q14.19 23.87 16.53 22.57Q18.88 21.26 22.10 21.26Q25.32 21.26 27.66 22.57Q30.00 23.87 31.27 26.27Q32.53 28.67 32.53 32.0Q32.53 35.30 31.27 37.72Q30.00 40.13 27.66 41.43Q26.22 42.23 24.47 42.53V43.39Q24.47 43.88 24.61 44.04Q24.74 44.20 25.19 44.20H27.56V47.81ZM22.08 38.32Q23.69 38.32 24.81 37.57Q25.94 36.83 26.53 35.41Q27.11 33.99 27.11 32.0Q27.11 29.98 26.53 28.57Q25.94 27.17 24.81 26.42Q23.69 25.67 22.08 25.67Q20.50 25.67 19.38 26.42Q18.26 27.17 17.66 28.57Q17.07 29.98 17.07 32.0Q17.07 33.99 17.66 35.41Q18.26 36.83 19.38 37.57Q20.50 38.32 22.08 38.32ZM34.70 42.35V21.65H44.39Q48.15 21.65 49.93 22.95Q51.71 24.26 51.71 26.73Q51.71 28.37 51.06 29.33Q50.42 30.28 49.45 30.74Q48.59 31.18 47.73 31.33Q49.87 31.71 51.08 32.97Q52.33 34.28 52.33 36.6Q52.33 38.78 51.29 40.04Q50.26 41.30 48.56 41.82Q46.85 42.35 44.85 42.35ZM39.89 38.36H43.75Q45.10 38.36 45.82 38.03Q46.54 37.69 46.81 37.11Q47.08 36.52 47.08 35.82Q47.08 35.10 46.78 34.52Q46.48 33.94 45.71 33.60Q44.94 33.26 43.55 33.26H39.89ZM39.89 29.54H43.99Q45.26 29.54 45.90 29.07Q46.55 28.60 46.55 27.58Q46.55 26.71 46.00 26.17Q45.46 25.63 44.02 25.63H39.89Z%22 fill=%22%23fff%22/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<meta property="og:url" content="https://quentinbertails.github.io/">
+<meta property="og:site_name" content="Quentin Bertails">
+<meta property="og:image" content="https://quentinbertails.github.io/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Quentin Bertails, création de sites web : un site qui donne envie de venir chez vous.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="canonical" href="https://quentinbertails.github.io/">
+<link rel="preload" href="assets/fonts/schibsted-grotesk-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/schibsted-grotesk-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Quentin Bertails – Création de sites web",
-  "description": "Création, refonte, maintenance et hébergement de sites web pour les commerces locaux.",
-  "email": "quentin.bertails@free.fr",
-  "telephone": "+33768834150",
-  "areaServed": "Landes, France"
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "name": "Quentin Bertails – Création de sites web",
+      "description": "Création, refonte, maintenance et hébergement de sites web pour les commerces locaux.",
+      "email": "quentin.bertails@free.fr",
+      "telephone": "+33768834150",
+      "areaServed": "Landes, France",
+      "@id": "https://quentinbertails.github.io/#entreprise",
+      "url": "https://quentinbertails.github.io/",
+      "logo": "https://quentinbertails.github.io/assets/icons/icon-512.png",
+      "image": "https://quentinbertails.github.io/assets/og-image.png",
+      "founder": {
+        "@type": "Person",
+        "name": "Quentin Bertails"
+      },
+      "knowsLanguage": [
+        "fr",
+        "en"
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "Site une page",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 490,
+            "priceCurrency": "EUR"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Site vitrine",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 890,
+            "priceCurrency": "EUR"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Combien de temps faut-il pour créer un site ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "En général, une à trois semaines pour un site vitrine. Le délai dépend surtout du temps nécessaire pour réunir vos textes et vos photos. Le calendrier est fixé ensemble dans le devis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qu'est-ce que je dois fournir ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Votre logo si vous en avez un, des photos de votre établissement et les informations pratiques (horaires, tarifs, adresse). Je peux vous aider à rédiger les textes et à les mettre en forme."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Est-ce que je pourrai modifier mon site moi-même ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, si votre site est fait sous WordPress : je vous montre comment changer un texte ou une photo. Si vous préférez ne pas y toucher, la formule de maintenance inclut ces petites modifications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mon site m'appartient-il vraiment ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Le nom de domaine est réservé à votre nom et vous recevez tous les fichiers et accès. Si vous arrêtez la maintenance, vous gardez votre site."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mon site sera-t-il bien placé sur Google ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Chaque site est construit pour être bien compris par Google : titres, descriptions, rapidité, affichage mobile. Je vous aide aussi à soigner votre fiche Google, très importante pour les recherches locales. Personne ne peut honnêtement garantir une première place, mais ces bases font une vraie différence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pouvez-vous traduire mon site en anglais ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Je traduis moi-même les contenus, sans outil automatique. C'est un vrai plus pour accueillir les touristes étrangers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Faites-vous aussi les logos ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Je ne suis pas graphiste. Je travaille à partir de votre logo et de vos couleurs. Si vous n'en avez pas, je peux réaliser une mise en forme simple de votre nom ou vous orienter vers un graphiste."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment se passe le paiement ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Les modalités sont précisées dans le devis : en général un acompte au lancement du projet et le solde à la mise en ligne. La maintenance se règle chaque mois et peut être arrêtée."
+          }
+        }
+      ]
+    }
+  ]
 }
 </script>
 
 <style>
+@font-face { font-family: "Schibsted Grotesk"; font-style: normal; font-weight: 400; font-display: swap; src: url("assets/fonts/schibsted-grotesk-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Schibsted Grotesk"; font-style: normal; font-weight: 500; font-display: swap; src: url("assets/fonts/schibsted-grotesk-latin-500-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Schibsted Grotesk"; font-style: normal; font-weight: 600; font-display: swap; src: url("assets/fonts/schibsted-grotesk-latin-600-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Schibsted Grotesk"; font-style: normal; font-weight: 700; font-display: swap; src: url("assets/fonts/schibsted-grotesk-latin-700-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Schibsted Grotesk"; font-style: normal; font-weight: 800; font-display: swap; src: url("assets/fonts/schibsted-grotesk-latin-800-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
 :root {
   --bg: #FFFFFF;
   --surface: #F2F6F3;
@@ -671,25 +780,6 @@ p { margin: 0; }
 }
 .link-btn:hover { color: #fff; }
 
-/* ---------- Mentions légales ---------- */
-.legal {
-  width: min(680px, calc(100% - 32px)); max-height: calc(100dvh - 48px);
-  border: 0; border-radius: var(--radius-lg); padding: 0;
-  color: var(--ink); box-shadow: 0 30px 80px rgba(0,0,0,.3);
-}
-.legal::backdrop { background: rgba(20, 32, 26, .55); }
-.legal-inner { padding: 32px clamp(20px, 4vw, 40px) 36px; }
-.legal-head { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 8px; }
-.legal h2 { font-size: 1.6rem; }
-.legal h3 { font-size: 1.05rem; margin-top: 24px; }
-.legal p { margin-top: 8px; color: var(--muted); font-size: .97rem; }
-.legal .todo { background: #FFF4CC; color: #6B5300; padding: 0 4px; border-radius: 4px; }
-.close-btn {
-  width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--line); background: #fff;
-  cursor: pointer; display: grid; place-items: center; flex: none; color: var(--ink);
-}
-.close-btn svg { width: 18px; height: 18px; }
-
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; animation: none !important; }
@@ -1189,41 +1279,11 @@ p { margin: 0; }
     </div>
     <div class="footer-bottom">
       <span>© <span id="year">2026</span> Quentin Bertails</span>
-      <button class="link-btn" type="button" id="open-legal">Mentions légales et confidentialité</button>
+      <a class="link-btn" href="mentions-legales.html">Mentions légales et confidentialité</a>
     </div>
   </div>
 </footer>
 
-<dialog class="legal" id="legal" aria-labelledby="legal-title">
-  <div class="legal-inner">
-    <div class="legal-head">
-      <h2 id="legal-title">Mentions légales</h2>
-      <button class="close-btn" type="button" id="close-legal">
-        <span class="sr-only">Fermer</span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
-      </button>
-    </div>
-    <h3>Éditeur du site</h3>
-    <p>Quentin Bertails, <span class="todo">statut à compléter (entrepreneur individuel)</span><br>
-    SIRET : <span class="todo">à compléter</span><br>
-    Adresse : <span class="todo">adresse professionnelle à compléter (une domiciliation suffit)</span><br>
-    Email : quentin.bertails@free.fr<br>
-    Directeur de la publication : Quentin Bertails</p>
-
-    <h3>Hébergement</h3>
-    <p>GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</p>
-
-    <h3>Données personnelles</h3>
-    <p>Les informations envoyées via le formulaire de contact servent uniquement à répondre à votre demande. Elles ne sont ni revendues ni utilisées à des fins publicitaires, et sont supprimées au bout de trois ans sans échange.</p>
-    <p>Vous pouvez demander à consulter, corriger ou supprimer vos données en écrivant à l'adresse email ci-dessus.</p>
-
-    <h3>Cookies</h3>
-    <p>Ce site n'utilise aucun cookie et aucun outil de mesure d'audience.</p>
-
-    <h3>Propriété intellectuelle</h3>
-    <p>Les textes et la mise en page de ce site sont la propriété de Quentin Bertails. Les exemples de sites présentés sont fictifs ou utilisés avec l'accord des intéressés.</p>
-  </div>
-</dialog>
 
 <script>
 (function () {
@@ -1324,13 +1384,6 @@ p { margin: 0; }
     status.classList.add("ok");
   });
 
-  /* Mentions légales */
-  var dialog = document.getElementById("legal");
-  document.getElementById("open-legal").addEventListener("click", function () {
-    if (typeof dialog.showModal === "function") dialog.showModal(); else dialog.setAttribute("open", "");
-  });
-  document.getElementById("close-legal").addEventListener("click", function () { dialog.close(); });
-  dialog.addEventListener("click", function (e) { if (e.target === dialog) dialog.close(); });
 })();
 </script>
 </body>

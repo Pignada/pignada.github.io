@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page introuvable | Quentin Bertails</title>
+<meta name="description" content="Cette page n'existe pas ou a été déplacée.">
+<meta name="theme-color" content="#1D6A4C">
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/schibsted-grotesk-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face { font-family: "Schibsted Grotesk"; font-style: normal; font-weight: 400; font-display: swap; src: url("/assets/fonts/schibsted-grotesk-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Schibsted Grotesk"; font-style: normal; font-weight: 600; font-display: swap; src: url("/assets/fonts/schibsted-grotesk-latin-600-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Schibsted Grotesk"; font-style: normal; font-weight: 700; font-display: swap; src: url("/assets/fonts/schibsted-grotesk-latin-700-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Schibsted Grotesk"; font-style: normal; font-weight: 800; font-display: swap; src: url("/assets/fonts/schibsted-grotesk-latin-800-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+:root { --bg:#FFFFFF; --surface:#F2F6F3; --ink:#14201A; --muted:#56665D; --line:#DCE5DF; --accent:#1D6A4C; --accent-hover:#15523A; --focus:#2F8FCB; color-scheme: light; }
+*, *::before, *::after { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font-family:"Schibsted Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif; font-size:1.0625rem; line-height:1.6; -webkit-font-smoothing:antialiased; }
+a { color:var(--accent); text-underline-offset:3px; }
+a:hover { color:var(--accent-hover); }
+:focus-visible { outline:3px solid var(--focus); outline-offset:3px; border-radius:4px; }
+.wrap { width:100%; max-width:1160px; margin-inline:auto; padding-inline:20px; }
+.site-header { border-bottom:1px solid var(--line); }
+.header-inner { height:68px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+.brand { display:flex; align-items:center; gap:12px; color:var(--ink); text-decoration:none; }
+.brand:hover { color:var(--ink); }
+.brand-mark { width:38px; height:38px; flex:none; display:block; }
+.brand-text { display:flex; flex-direction:column; line-height:1.15; }
+.brand-name { font-weight:700; font-size:1.02rem; letter-spacing:-0.01em; }
+.brand-sub { font-size:.8rem; color:var(--muted); }
+.btn { display:inline-flex; align-items:center; justify-content:center; min-height:50px; padding:12px 24px; border-radius:999px; border:2px solid transparent; font:inherit; font-weight:600; font-size:1rem; line-height:1.2; text-decoration:none; }
+.btn-primary { background:var(--accent); color:#fff; }
+.btn-primary:hover { background:var(--accent-hover); color:#fff; }
+.btn-ghost { color:var(--ink); border-color:var(--line); }
+.btn-ghost:hover { border-color:var(--ink); color:var(--ink); }
+.header-inner .btn { min-height:42px; padding:8px 18px; font-size:.95rem; }
+h1, h2 { margin:0; line-height:1.12; letter-spacing:-0.02em; text-wrap:balance; }
+h1 { font-size:clamp(2.1rem, 3.4vw + 1rem, 3.2rem); font-weight:800; letter-spacing:-0.035em; line-height:1.04; }
+h2 { font-size:1.3rem; font-weight:700; letter-spacing:-0.01em; }
+p { margin:0; }
+.site-footer { border-top:1px solid var(--line); padding-block:28px; color:var(--muted); font-size:.95rem; }
+.footer-inner { display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px; }
+@media (max-width:520px) { .header-inner .btn { display:none; } }
+.nf { padding-block:clamp(64px, 10vw, 140px); max-width:40rem; }
+.nf-code { font-size:1rem; font-weight:600; color:var(--accent); }
+.nf h1 { margin-top:12px; }
+.nf p { margin-top:18px; color:var(--muted); font-size:1.125rem; }
+.nf-actions { margin-top:32px; display:flex; flex-wrap:wrap; gap:12px; }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/" aria-label="Quentin Bertails, création de sites web, retour à l'accueil">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><rect width="64" height="64" rx="16" fill="#1D6A4C"/><path d="M23.77 47.81Q21.70 47.81 20.68 46.87Q19.67 45.94 19.67 44.10V42.53Q17.94 42.22 16.53 41.43Q14.19 40.13 12.93 37.72Q11.66 35.30 11.66 32.0Q11.66 28.67 12.93 26.27Q14.19 23.87 16.53 22.57Q18.88 21.26 22.10 21.26Q25.32 21.26 27.66 22.57Q30.00 23.87 31.27 26.27Q32.53 28.67 32.53 32.0Q32.53 35.30 31.27 37.72Q30.00 40.13 27.66 41.43Q26.22 42.23 24.47 42.53V43.39Q24.47 43.88 24.61 44.04Q24.74 44.20 25.19 44.20H27.56V47.81ZM22.08 38.32Q23.69 38.32 24.81 37.57Q25.94 36.83 26.53 35.41Q27.11 33.99 27.11 32.0Q27.11 29.98 26.53 28.57Q25.94 27.17 24.81 26.42Q23.69 25.67 22.08 25.67Q20.50 25.67 19.38 26.42Q18.26 27.17 17.66 28.57Q17.07 29.98 17.07 32.0Q17.07 33.99 17.66 35.41Q18.26 36.83 19.38 37.57Q20.50 38.32 22.08 38.32ZM34.70 42.35V21.65H44.39Q48.15 21.65 49.93 22.95Q51.71 24.26 51.71 26.73Q51.71 28.37 51.06 29.33Q50.42 30.28 49.45 30.74Q48.59 31.18 47.73 31.33Q49.87 31.71 51.08 32.97Q52.33 34.28 52.33 36.6Q52.33 38.78 51.29 40.04Q50.26 41.30 48.56 41.82Q46.85 42.35 44.85 42.35ZM39.89 38.36H43.75Q45.10 38.36 45.82 38.03Q46.54 37.69 46.81 37.11Q47.08 36.52 47.08 35.82Q47.08 35.10 46.78 34.52Q46.48 33.94 45.71 33.60Q44.94 33.26 43.55 33.26H39.89ZM39.89 29.54H43.99Q45.26 29.54 45.90 29.07Q46.55 28.60 46.55 27.58Q46.55 26.71 46.00 26.17Q45.46 25.63 44.02 25.63H39.89Z" fill="#fff"/></svg>
+      <span class="brand-text"><span class="brand-name">Quentin Bertails</span><span class="brand-sub">Création de sites web</span></span>
+    </a>
+    <a class="btn btn-primary" href="/#contact">Demander un devis</a>
+  </div>
+</header>
+<main class="wrap nf">
+  <p class="nf-code">Erreur 404</p>
+  <h1>Cette page n'existe pas ou a été déplacée.</h1>
+  <p>Vérifiez l'adresse, ou repartez de l'accueil pour découvrir les services, les tarifs et les réalisations.</p>
+  <div class="nf-actions">
+    <a class="btn btn-primary" href="/">Retour à l'accueil</a>
+    <a class="btn btn-ghost" href="/#contact">Me contacter</a>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© 2026 Quentin Bertails</span>
+    <a href="/mentions-legales.html">Mentions légales et confidentialité</a>
+  </div>
+</footer>
+</body>
+</html>
