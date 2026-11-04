@@ -1,38 +1,41 @@
 # quentinbertails.github.io
 
-Site vitrine de Quentin Bertails, création, refonte, maintenance et hébergement de sites web.
+Site vitrine de Quentin Bertails : création, refonte, maintenance, hébergement et traduction de sites web.
 En ligne sur **https://quentinbertails.github.io**, publié automatiquement par GitHub Pages à chaque modification de la branche `main`.
 
 ## Contenu du dépôt
 
-| Fichier | Rôle |
+| Fichier ou dossier | Rôle |
 |---|---|
-| `index.html` | La page d'accueil complète (styles et scripts inclus dans le fichier). |
+| `index.html` | Page d'accueil : services, formules, réalisation, conseils, questions, contact. |
+| `services/` | Une page par service : création de site vitrine, refonte, maintenance et hébergement, traduction en anglais. |
+| `conseils/` | Les articles de conseils et leur page d'accueil (`conseils/index.html`). |
 | `mentions-legales.html` | Mentions légales et politique de confidentialité. |
 | `404.html` | Page affichée quand une adresse n'existe pas. |
-| `favicon.svg`, `assets/icons/` | Icône d'onglet, icônes pour téléphone et raccourcis. |
-| `assets/og-image.png` | Image affichée quand le lien est partagé (WhatsApp, Facebook, LinkedIn…). |
+| `assets/css/site.css` | Styles communs à toutes les pages. |
+| `assets/js/site.js` | Scripts communs : menu mobile, comparateur avant/après, formulaire de contact. |
 | `assets/fonts/` | Police Schibsted Grotesk, hébergée sur le site (licence `OFL.txt`). |
-| `manifest.webmanifest` | Nom, couleurs et icônes quand le site est ajouté à l'écran d'accueil. |
-| `robots.txt`, `sitemap.xml` | Indications pour Google et les autres moteurs de recherche. |
-| `.nojekyll` | Demande à GitHub Pages de publier les fichiers tels quels. |
+| `favicon.svg`, `assets/icons/`, `assets/og-image.png` | Icônes et image affichée quand le lien est partagé. |
+| `manifest.webmanifest`, `robots.txt`, `sitemap.xml` | Réglages pour les téléphones et les moteurs de recherche. |
 
 ## Modifier le site
 
 Le plus simple : ouvrir le fichier sur GitHub, cliquer sur le crayon, modifier, puis **Commit changes**. Le site se met à jour en une à deux minutes (suivi dans l'onglet **Actions**).
 
-Pour remplacer un fichier entier : **Add file → Upload files**, en gardant exactement le même nom.
+- Le **menu** et le **pied de page** sont répétés dans chaque page : une modification doit être faite dans tous les fichiers `.html`.
+- Une **nouvelle page** doit aussi être ajoutée à `sitemap.xml`.
+- La balise `google-site-verification` en haut de `index.html` ne doit jamais être supprimée (elle prouve à Google que le site t'appartient).
 
 ## À faire
 
 - [ ] **SIRET** : une fois la micro-entreprise créée, remplacer « En cours d'attribution » dans `mentions-legales.html`.
 - [ ] **Adresse** : la loi demande une adresse dans les mentions légales d'un site professionnel. Mettre une adresse de domiciliation à la place de « Communiquée sur simple demande par email ».
-- [ ] **Formspree** (facultatif) : créer un formulaire sur formspree.io, puis coller son adresse dans `FORM_ENDPOINT` (en bas de `index.html`). Mettre alors à jour la ligne « Comment » de la section Données personnelles des mentions légales (les messages transitent par Formspree).
-- [ ] **Tarifs** : vérifier les prix « à partir de » (490 €, 890 €, 29 €/mois), dans la section Tarifs et dans les données structurées en haut de `index.html` (`minPrice`).
-- [ ] **Réalisations** : remplacer les vignettes dessinées par de vraies captures dès qu'un site client est en ligne, avec l'accord du client.
-- [ ] **Google** : déclarer le site dans Google Search Console et y envoyer `sitemap.xml`. Créer une fiche Google Business Profile si une zone d'intervention est affichée.
-- [ ] **Nom de domaine** (facultatif) : après achat, le renseigner dans Settings → Pages → Custom domain, puis remplacer `https://quentinbertails.github.io` dans `index.html`, `mentions-legales.html`, `sitemap.xml` et `robots.txt`.
+- [ ] **Formspree** (facultatif) : créer un formulaire sur formspree.io, puis coller son adresse dans `FORM_ENDPOINT`, en haut de `assets/js/site.js`. Mettre alors à jour la ligne « Comment » de la section Données personnelles des mentions légales (les messages transitent par Formspree).
+- [ ] **Réalisations** : ajouter un lien vers le site Blade Runner s'il est en ligne ; remplacer ou compléter par de vrais sites clients dès qu'ils existent, avec l'accord du client.
+- [ ] **Google Business Profile** : créer la fiche en « zone desservie » (l'adresse n'est pas affichée).
+- [ ] **Nom de domaine** (facultatif) : après achat, le renseigner dans Settings → Pages → Custom domain, puis remplacer `https://quentinbertails.github.io` dans tous les fichiers `.html`, `sitemap.xml` et `robots.txt`.
 
 ## Identité visuelle
 
-Couleurs, typographie, logo et composants sont décrits dans la charte graphique. Vert pin `#1D6A4C`, encre `#14201A`, brume `#F2F6F3`, police Schibsted Grotesk.
+Couleurs, typographie, logo et composants sont décrits dans la charte graphique : vert pin `#1D6A4C`, encre `#14201A`, brume `#F2F6F3`, police Schibsted Grotesk.
+L'exemple « Camping du Lac » de l'accueil utilise volontairement une autre identité (bleu nuit, sable, orange) : c'est un site client fictif.
