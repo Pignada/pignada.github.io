@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Voyage au cœur de Blade Runner 2049</title>
+  <meta name="description" content="Site d'analyse consacré à Blade Runner 2049 de Denis Villeneuve : avis, personnages, univers visuel et sonore, thèmes et inspirations.">
+  <meta name="theme-color" content="#000000">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Ccircle cx='32' cy='30' r='17' fill='%236e0202'/%3E%3Crect x='0' y='44' width='64' height='2' fill='%23ff4141'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <div class="qb-bar"><p>Projet d’étude réalisé par <a href="/">Quentin Bertails</a>, création de sites web.</p><a class="qb-bar-retour" href="/#realisations">Retour au portfolio</a></div>
+
+  <header class="site-header">
+    <!-- Case à cocher qui contrôle l'ouverture du menu mobile (fonctionne sans JavaScript) -->
+    <input type="checkbox" id="hamburger-checkbox" class="hamburger-checkbox" aria-label="Ouvrir ou fermer le menu">
+    <label for="hamburger-checkbox" class="hamburger" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <a href="index.html" class="logo-link" aria-label="Retour à l’accueil">
+      <span class="wordmark" aria-label="Blade Runner 2049, le site d’analyse"><span class="wordmark-titre" aria-hidden="true">Blade Runner <b>2049</b></span><span class="wordmark-sous" aria-hidden="true">Le site d’analyse</span></span>
+    </a>
+
+    <nav class="nav-principale" aria-label="Navigation principale">
+      <ul class="menu">
+        <li><a href="index.html" aria-current="page">ACCUEIL</a><span class="jp-menu" aria-hidden="true">ようこそ</span></li>
+        <li><a href="avis.html">AVIS</a><span class="jp-menu" aria-hidden="true">感想</span></li>
+        <li><a href="personnages.html">PERSONNAGES</a><span class="jp-menu" aria-hidden="true">登場人物</span></li>
+        <li><a href="univers.html">UNIVERS VISUEL</a><span class="jp-menu" aria-hidden="true">世界観</span></li>
+        <li><a href="themes.html">THÈMES</a><span class="jp-menu" aria-hidden="true">主題</span></li>
+        <li><a href="inspirations.html">INSPIRATIONS</a><span class="jp-menu" aria-hidden="true">影響</span></li>
+      </ul>
+    </nav>
+
+    <div class="outils">
+      <button class="outil" id="btn-pluie" type="button" aria-pressed="false" title="Activer ou couper l’effet de pluie"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M4 2 2.5 7M8.5 1 7 6M13 2l-1.5 5M5 9l-1.5 5M10 9l-1.5 5"/></svg><span class="label-outil">Pluie</span><span class="visually-hidden"> (effet visuel)</span></button>
+      <button class="outil" id="btn-son" type="button" aria-pressed="false" title="Ambiance sonore générée en direct"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M2 6v4M5 3.5v9M8 5v6M11 2v12M14 6.5v3"/></svg><span class="label-outil">Ambiance</span><span class="visually-hidden"> sonore</span></button>
+    </div>
+  </header>
+
+<main id="contenu">
+    <!-- Héros visuel -->
+    <section class="imagebaniere imagebaniere--accueil visuel--soleil">
+      <span class="jp-vertical" aria-hidden="true">ブレードランナー</span>
+      <div class="container">
+        <div class="hud-ligne">
+          <span class="hud hud--accent">● Transmission LAPD</span>
+          <span class="hud">Los Angeles · 34°03′N 118°15′O</span>
+          <span class="hud">Année 2049</span>
+        </div>
+        <h1 class="titre-film"><span class="l1">Blade Runner</span><span class="l2">2049</span></h1>
+        <p>Explorez un univers fascinant entre humanité et technologie : personnages, images, musique, thèmes et héritage du film de Denis Villeneuve.</p>
+        <div class="groupe-boutons">
+          <a href="avis.html" class="bouton bouton--plein">Mon avis</a>
+          <a href="#bande-annonce" class="bouton">Voir la bande-annonce</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fiche technique -->
+    <dl class="fiche" aria-label="Fiche technique du film">
+      <div><dt>Sortie en France</dt><dd>4 octobre 2017</dd></div>
+      <div><dt>Réalisation</dt><dd>Denis Villeneuve</dd></div>
+      <div><dt>Durée</dt><dd>2 h 43</dd></div>
+      <div><dt>Image</dt><dd>Roger Deakins</dd></div>
+      <div><dt>Musique</dt><dd>Hans Zimmer, Benjamin Wallfisch</dd></div>
+      <div><dt>Récompenses</dt><dd>2 Oscars sur 5 nominations</dd></div>
+    </dl>
+
+    <!-- Présentation + synopsis -->
+    <section class="section" id="presentation">
+      <span class="jp-vertical" aria-hidden="true">二〇四九年</span>
+      <div class="container intro-grille">
+        <div class="reveal">
+          <p class="eyebrow">Présentation</p>
+          <h2 class="titre-section">Trente ans <strong>après</strong></h2>
+          <div class="texte">
+            <p class="chapeau">Sorti en 2017, <em>Blade Runner 2049</em> est la suite du film culte de Ridley Scott (1982), lui-même adapté du roman de Philip K. Dick <em>Les androïdes rêvent-ils de moutons électriques ?</em></p>
+            <p>Il est réalisé par le Québécois Denis Villeneuve (<em>Sicario</em>, <em>Premier Contact</em>, et plus tard <em>Dune</em>) et écrit par Hampton Fancher, déjà scénariste du premier film, avec Michael Green. Ridley Scott en est le producteur délégué. Roger Deakins signe l’image, Hans Zimmer et Benjamin Wallfisch la musique.</p>
+            <h3 class="hud hud--accent" style="margin-top:2rem">Synopsis, sans spoiler</h3>
+            <p>Los Angeles, 2049. La mer monte, la nourriture est synthétique et la pluie ne s’arrête jamais. K, un Blade Runner du LAPD, traque les derniers réplicants d’ancienne génération pour les « retirer ». Au cours d’une mission, il exhume un secret enfoui depuis trente ans, capable de faire basculer l’équilibre entre humains et réplicants.</p>
+            <p>Son enquête le mène sur les traces de Rick Deckard, disparu depuis des décennies, et l’oblige à s’interroger sur sa propre identité.</p>
+          </div>
+        </div>
+        <aside class="casting reveal" aria-label="Distribution principale">
+          <h3>Distribution principale</h3>
+          <ul>
+            <li><span>Ryan Gosling</span><span>K</span></li>
+            <li><span>Harrison Ford</span><span>Rick Deckard</span></li>
+            <li><span>Ana de Armas</span><span>Joi</span></li>
+            <li><span>Sylvia Hoeks</span><span>Luv</span></li>
+            <li><span>Robin Wright</span><span>Lieutenante Joshi</span></li>
+            <li><span>Jared Leto</span><span>Niander Wallace</span></li>
+            <li><span>Mackenzie Davis</span><span>Mariette</span></li>
+            <li><span>Carla Juri</span><span>Ana Stelline</span></li>
+            <li><span>Dave Bautista</span><span>Sapper Morton</span></li>
+          </ul>
+          <p style="margin-top:1.2rem"><a class="bouton bouton--petit" href="personnages.html">Tous les dossiers →</a></p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Avant de voir le film -->
+    <section class="section section--sombre section--bande">
+      <div class="container">
+        <p class="eyebrow">Avant de lancer le film</p>
+        <h2 class="titre-section">Le monde de <strong>2049</strong> en trois points</h2>
+        <div class="techs techs--3" style="margin-top:2rem">
+          <article class="tech reveal">
+            <span class="code">Réplicants</span>
+            <h3>Des humains fabriqués</h3>
+            <p>Créés par génie génétique pour travailler dans les colonies spatiales, plus forts que nous, les réplicants ont été interdits après une série de révoltes. Les anciens modèles survivants sont traqués.</p>
+          </article>
+          <article class="tech reveal">
+            <span class="code">Blade Runners</span>
+            <h3>Les chasseurs</h3>
+            <p>Les policiers chargés de « retirer » (éliminer) les réplicants en fuite. Dans le premier film, c’était Rick Deckard. En 2049, la police emploie un réplicant obéissant pour ce travail : K.</p>
+          </article>
+          <article class="tech reveal">
+            <span class="code">Wallace Corporation</span>
+            <h3>Le sauveur inquiétant</h3>
+            <p>Après l’effondrement des écosystèmes, l’industriel Niander Wallace a évité la famine grâce à l’agriculture synthétique, puis a relancé la fabrication de réplicants, cette fois conçus pour obéir.</p>
+          </article>
+        </div>
+        <p class="hud" style="margin-top:1.4rem">Les événements entre 2019 et 2049 sont racontés dans la <a class="lien" href="inspirations.html#frise">frise de la saga</a>.</p>
+      </div>
+    </section>
+
+    <!-- Citation marquante -->
+    <section class="citation" aria-label="L’idée du film">
+      <div class="container">
+        <div class="reveal">
+          <p class="vo idee">Pour protéger ceux qu’on aime, il faut parfois s’éloigner d’eux.</p>
+          <p class="vf">C’est le choix qu’a fait Deckard, trente ans avant le début du film.</p>
+          <cite>L’idée du film, en une phrase</cite>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bande-annonce -->
+    <section class="section" id="bande-annonce">
+      <div class="container trailer">
+        <a class="trailer-ecran reveal" href="https://www.youtube.com/watch?v=gCcx85zbxz4" target="_blank" rel="noopener" aria-label="Regarder la bande-annonce officielle sur YouTube (nouvel onglet)">
+          <span class="trailer-lecture" aria-hidden="true"></span>
+          <span class="trailer-legende hud">Bande-annonce officielle · VO · YouTube</span>
+        </a>
+        <div class="reveal">
+          <p class="eyebrow">Bande-annonce</p>
+          <h2 class="titre-section">Le ton est <strong>donné</strong></h2>
+          <div class="texte">
+            <p>Pluie, néons, statues géantes dans un désert orange, et les basses écrasantes de Hans Zimmer : la bande-annonce officielle résume l’ambiance du film sans dévoiler l’intrigue.</p>
+          </div>
+          <div class="groupe-boutons" style="margin-top:1.6rem">
+            <a class="bouton bouton--plein" href="https://www.youtube.com/watch?v=gCcx85zbxz4" target="_blank" rel="noopener">Regarder en VO</a>
+            <a class="bouton" href="https://www.youtube.com/results?search_query=blade+runner+2049+bande+annonce+vf" target="_blank" rel="noopener">Chercher la VF</a>
+          </div>
+          <p class="hud" style="margin-top:1rem">La vidéo s’ouvre sur YouTube, dans un nouvel onglet.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cartes vers les pages (wireframe : 2 puis 3) -->
+    <section class="section section--sombre section--bande" id="explorer">
+      <div class="container">
+        <p class="eyebrow">Explorer le site</p>
+        <h2 class="titre-section">Cinq <strong>portes</strong> d’entrée</h2>
+        <div class="boites" style="margin-top:2rem">
+          <div class="boite boite--large reveal">
+            <a href="avis.html">
+              <figure><div class="visuel visuel--brume" role="img" aria-label="Illustration originale : serres dans le brouillard"></div><span class="jp-coin" aria-hidden="true">感想</span></figure>
+              <div class="corps">
+                <h3>Avis</h3>
+                <p>Mon point de vue : ce qui m’a marqué, ce qui m’a moins convaincu, ma note critère par critère… et la vôtre.</p>
+                <span class="fleche">Lire l’avis →</span>
+              </div>
+            </a>
+          </div>
+          <div class="boite boite--large reveal">
+            <a href="personnages.html">
+              <figure><div class="visuel visuel--nuit" role="img" aria-label="Illustration originale : ville la nuit"></div><span class="jp-coin" aria-hidden="true">登場人物</span></figure>
+              <div class="corps">
+                <h3>Personnages</h3>
+                <p>Douze dossiers du LAPD, le réseau qui les relie et un test : quel personnage êtes-vous ?</p>
+                <span class="fleche">Ouvrir les dossiers →</span>
+              </div>
+            </a>
+          </div>
+          <div class="boite reveal">
+            <a href="univers.html">
+              <figure><div class="visuel visuel--neon" role="img" aria-label="Illustration originale : rue aux néons sous la pluie"></div><span class="jp-coin" aria-hidden="true">世界観</span></figure>
+              <div class="corps">
+                <h3>Univers visuel</h3>
+                <p>Un monde néonisé, sombre et captivant : palettes, technologies du futur et ambiance sonore à écouter.</p>
+                <span class="fleche">Entrer →</span>
+              </div>
+            </a>
+          </div>
+          <div class="boite reveal">
+            <a href="themes.html">
+              <figure><div class="visuel visuel--desert" role="img" aria-label="Illustration originale : ville en ruines dans une brume orange"></div><span class="jp-coin" aria-hidden="true">主題</span></figure>
+              <div class="corps">
+                <h3>Thèmes profonds</h3>
+                <p>Humanité, mémoire, amour, écologie : les grandes questions du film, et quatre débats.</p>
+                <span class="fleche">Réfléchir →</span>
+              </div>
+            </a>
+          </div>
+          <div class="boite reveal">
+            <a href="inspirations.html">
+              <figure><div class="visuel visuel--holo" role="img" aria-label="Illustration originale : lueur d'hologramme"></div><span class="jp-coin" aria-hidden="true">影響</span></figure>
+              <div class="corps">
+                <h3>Inspirations</h3>
+                <p>Du roman de Philip K. Dick à la série <em>Blade Runner 2099</em> : influences, récompenses et frise de la saga.</p>
+                <span class="fleche">Remonter le temps →</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compte à rebours -->
+    <section class="section">
+      <div class="container rebours" id="rebours">
+        <div>
+          <p class="eyebrow">Compte à rebours</p>
+          <h2 class="titre-section">Le futur <strong>approche</strong></h2>
+          <div class="texte narrow">
+            <p>Le premier <em>Blade Runner</em> se déroulait en novembre 2019 : ce futur est déjà notre passé. Celui de K arrive dans…</p>
+          </div>
+        </div>
+        <div class="rebours-chiffres" aria-live="off">
+          <div><b data-r="a">–</b><span>ans</span></div>
+          <div><b data-r="j">–</b><span>jours</span></div>
+          <div><b data-r="h">–</b><span>heures</span></div>
+          <div><b data-r="m">–</b><span>min</span></div>
+          <div><b data-r="s">–</b><span>s</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grille">
+        <div>
+          <p class="footer-merci">Merci d’être passé, j’espère que ça vous a plu.</p>
+          <p>Un site d’analyse consacré à <em>Blade Runner 2049</em> (Denis Villeneuve, 2017), réalisé dans le cadre d’un projet universitaire.</p>
+          <button class="origami" type="button" data-origami aria-controls="origami-msg"><svg viewBox="0 0 40 32" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"><path d="M8 12 14 6l9 1 6 4-2 8-11 1-8-3z"/><path d="M14 6l2 7 13-2M16 13l-8-1M16 13l0 7"/><path d="M29 11l5-2 3 3-2 4-6-1M34 9l1 7"/><path d="M11 17l-1 9M15 20l1 6M24 19l1 7M27 19l2 6"/></svg><span>Un mouton en papier ?</span></button>
+          <p class="origami-message" id="origami-msg" hidden></p>
+        </div>
+        <nav aria-label="Plan du site">
+          <h4>Explorer</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="avis.html">Avis</a></li>
+            <li><a href="personnages.html">Personnages</a></li>
+            <li><a href="univers.html">Univers visuel</a></li>
+            <li><a href="themes.html">Thèmes</a></li>
+            <li><a href="inspirations.html">Inspirations</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h4>Le film</h4>
+          <ul class="footer-film">
+            <li>Réalisation : Denis Villeneuve</li>
+            <li>Sortie en France : 4 octobre 2017</li>
+            <li>Durée : 2 h 43</li>
+            <li>Suite de <em>Blade Runner</em> (Ridley Scott, 1982)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-mentions">
+        <p>Site de fan non officiel, sans lien avec Alcon Entertainment, Warner Bros. ou Sony Pictures. Aucune image, aucun logo ni aucune réplique du film n’est reproduit : les illustrations sont des créations originales et les idées du film sont reformulées. <em>Blade Runner</em> et <em>Blade Runner 2049</em> sont des marques de leurs propriétaires respectifs.</p>
+        <p class="hud">Los Angeles · 2049</p>
+      </div>
+    </div>
+    <div class="footer-jp" aria-hidden="true">ブレードランナー</div>
+  </footer>
+
+</body>
+</html>

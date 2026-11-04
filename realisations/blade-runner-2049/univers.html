@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  
+  <title>Univers visuel et sonore · Blade Runner 2049</title>
+  <meta name="description" content="La direction artistique de Blade Runner 2049 : palettes de couleurs par lieu, galerie, technologies du futur, bande originale et ambiance sonore générée en direct.">
+  <meta name="theme-color" content="#000000">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Ccircle cx='32' cy='30' r='17' fill='%236e0202'/%3E%3Crect x='0' y='44' width='64' height='2' fill='%23ff4141'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body data-zone="univers">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <div class="qb-bar"><p>Projet d’étude réalisé par <a href="/">Quentin Bertails</a>, création de sites web.</p><a class="qb-bar-retour" href="/#realisations">Retour au portfolio</a></div>
+
+  <header class="site-header">
+    <!-- Case à cocher qui contrôle l'ouverture du menu mobile (fonctionne sans JavaScript) -->
+    <input type="checkbox" id="hamburger-checkbox" class="hamburger-checkbox" aria-label="Ouvrir ou fermer le menu">
+    <label for="hamburger-checkbox" class="hamburger" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <a href="index.html" class="logo-link" aria-label="Retour à l’accueil">
+      <span class="wordmark" aria-label="Blade Runner 2049, le site d’analyse"><span class="wordmark-titre" aria-hidden="true">Blade Runner <b>2049</b></span><span class="wordmark-sous" aria-hidden="true">Le site d’analyse</span></span>
+    </a>
+
+    <nav class="nav-principale" aria-label="Navigation principale">
+      <ul class="menu">
+        <li><a href="index.html">ACCUEIL</a><span class="jp-menu" aria-hidden="true">ようこそ</span></li>
+        <li><a href="avis.html">AVIS</a><span class="jp-menu" aria-hidden="true">感想</span></li>
+        <li><a href="personnages.html">PERSONNAGES</a><span class="jp-menu" aria-hidden="true">登場人物</span></li>
+        <li><a href="univers.html" aria-current="page">UNIVERS VISUEL</a><span class="jp-menu" aria-hidden="true">世界観</span></li>
+        <li><a href="themes.html">THÈMES</a><span class="jp-menu" aria-hidden="true">主題</span></li>
+        <li><a href="inspirations.html">INSPIRATIONS</a><span class="jp-menu" aria-hidden="true">影響</span></li>
+      </ul>
+    </nav>
+
+    <div class="outils">
+      <button class="outil" id="btn-pluie" type="button" aria-pressed="false" title="Activer ou couper l’effet de pluie"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M4 2 2.5 7M8.5 1 7 6M13 2l-1.5 5M5 9l-1.5 5M10 9l-1.5 5"/></svg><span class="label-outil">Pluie</span><span class="visually-hidden"> (effet visuel)</span></button>
+      <button class="outil" id="btn-son" type="button" aria-pressed="false" title="Ambiance sonore générée en direct"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M2 6v4M5 3.5v9M8 5v6M11 2v12M14 6.5v3"/></svg><span class="label-outil">Ambiance</span><span class="visually-hidden"> sonore</span></button>
+    </div>
+  </header>
+
+<main id="contenu">
+    <section class="imagebaniere visuel--neon">
+      <span class="jp-vertical" aria-hidden="true">世界観</span>
+      <div class="container">
+        <div class="hud-ligne"><span class="hud hud--accent">● Direction artistique</span><span class="hud">Image · Décors · Son</span></div>
+        <h1>Univers visuel <br><strong>et sonore</strong></h1>
+        <p>Pluie, néons, poussière orange et silence : comment Roger Deakins et le chef décorateur Dennis Gassner ont construit le monde de 2049.</p>
+        <div class="groupe-boutons">
+          <a class="bouton bouton--plein" href="#ambiance">Écouter l’ambiance</a>
+          <a class="bouton" href="#direction">Voir les palettes</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Direction artistique -->
+    <section class="section" id="direction">
+      <div class="container">
+        <div class="deux-colonnes" style="align-items:end; margin-bottom:clamp(2.5rem,5vw,4rem)">
+          <div>
+            <p class="eyebrow">Direction artistique</p>
+            <h2 class="titre-section">Un néo-noir <strong>dépeuplé</strong></h2>
+          </div>
+          <div class="texte">
+            <p>Le premier film montrait une ville grouillante, saturée de foule et de publicités. Villeneuve garde la nuit, la pluie et les néons, mais vide le cadre : plans larges, silhouettes minuscules, architecture massive. Le néo-noir devient un monde après la catastrophe.</p>
+            <p>Le tournage a eu lieu surtout aux studios Korda et Origo, près de Budapest, avec beaucoup de décors construits en dur plutôt que des fonds verts. La Bourse de Budapest a servi pour les intérieurs du casino de Las Vegas, et d’anciennes centrales électriques de l’époque soviétique, à Inota et Kelenföld, pour d’autres décors.</p>
+          </div>
+        </div>
+
+        <p class="eyebrow">Chaque lieu a sa couleur</p>
+        <div class="lieux">
+          <article class="lieu reveal">
+            <div class="lieu-image"><div class="visuel visuel--pluie" role="img" aria-label="Illustration originale : tours sous une pluie bleue"></div></div>
+            <div>
+              <h3>Los Angeles sous la pluie <span class="jp" aria-hidden="true">雨</span></h3>
+              <p>Bleu acier, gris, noir : une ville noyée sous une pluie permanente, presque sans lumière naturelle. La seule chaleur vient des écrans publicitaires et des néons.</p>
+              <div class="palette" role="group" aria-label="Palette du lieu"><button type="button" data-hex="#131f2d" style="--c:#131f2d;--part:19" aria-label="Copier la couleur #131f2d (19 % de la palette)"><span>#131f2d · 19 %</span></button><button type="button" data-hex="#264461" style="--c:#264461;--part:18" aria-label="Copier la couleur #264461 (18 % de la palette)"><span>#264461 · 18 %</span></button><button type="button" data-hex="#29597f" style="--c:#29597f;--part:21" aria-label="Copier la couleur #29597f (21 % de la palette)"><span>#29597f · 21 %</span></button><button type="button" data-hex="#3b7699" style="--c:#3b7699;--part:15" aria-label="Copier la couleur #3b7699 (15 % de la palette)"><span>#3b7699 · 15 %</span></button><button type="button" data-hex="#5697b4" style="--c:#5697b4;--part:14" aria-label="Copier la couleur #5697b4 (14 % de la palette)"><span>#5697b4 · 14 %</span></button><button type="button" data-hex="#81bacd" style="--c:#81bacd;--part:13" aria-label="Copier la couleur #81bacd (13 % de la palette)"><span>#81bacd · 13 %</span></button></div>
+              <p class="palette-legende">Palette dominante de ce lieu dans le film · cliquez pour copier</p>
+            </div>
+          </article>
+          <article class="lieu reveal">
+            <div class="lieu-image"><div class="visuel visuel--neon" role="img" aria-label="Illustration originale : rue aux néons sous la pluie"></div></div>
+            <div>
+              <h3>Les rues aux néons <span class="jp" aria-hidden="true">ネオン</span></h3>
+              <p>Rose, violet, cyan : les quartiers populaires héritent directement du premier film. Les inscriptions en japonais, coréen, hindi ou russe rappellent une ville mondialisée.</p>
+              <div class="palette" role="group" aria-label="Palette du lieu"><button type="button" data-hex="#130d2b" style="--c:#130d2b;--part:22" aria-label="Copier la couleur #130d2b (22 % de la palette)"><span>#130d2b · 22 %</span></button><button type="button" data-hex="#353064" style="--c:#353064;--part:22" aria-label="Copier la couleur #353064 (22 % de la palette)"><span>#353064 · 22 %</span></button><button type="button" data-hex="#844485" style="--c:#844485;--part:15" aria-label="Copier la couleur #844485 (15 % de la palette)"><span>#844485 · 15 %</span></button><button type="button" data-hex="#648cc7" style="--c:#648cc7;--part:6" aria-label="Copier la couleur #648cc7 (6 % de la palette)"><span>#648cc7 · 6 %</span></button><button type="button" data-hex="#c87abf" style="--c:#c87abf;--part:17" aria-label="Copier la couleur #c87abf (17 % de la palette)"><span>#c87abf · 17 %</span></button><button type="button" data-hex="#e7cdeb" style="--c:#e7cdeb;--part:18" aria-label="Copier la couleur #e7cdeb (18 % de la palette)"><span>#e7cdeb · 18 %</span></button></div>
+              <p class="palette-legende">Palette dominante de ce lieu dans le film · cliquez pour copier</p>
+            </div>
+          </article>
+          <article class="lieu reveal">
+            <div class="lieu-image"><div class="visuel visuel--brume" role="img" aria-label="Illustration originale : serres dans le brouillard"></div></div>
+            <div>
+              <h3>La ferme de Sapper <span class="jp" aria-hidden="true">霧</span></h3>
+              <p>Blanc laiteux et gris-vert : la scène d’ouverture se déroule dans un brouillard total, au milieu de serres à perte de vue. Une lumière froide et plate, sans ombre.</p>
+              <div class="palette" role="group" aria-label="Palette du lieu"><button type="button" data-hex="#172d34" style="--c:#172d34;--part:19" aria-label="Copier la couleur #172d34 (19 % de la palette)"><span>#172d34 · 19 %</span></button><button type="button" data-hex="#484e55" style="--c:#484e55;--part:9" aria-label="Copier la couleur #484e55 (9 % de la palette)"><span>#484e55 · 9 %</span></button><button type="button" data-hex="#5d848f" style="--c:#5d848f;--part:9" aria-label="Copier la couleur #5d848f (9 % de la palette)"><span>#5d848f · 9 %</span></button><button type="button" data-hex="#98a6aa" style="--c:#98a6aa;--part:8" aria-label="Copier la couleur #98a6aa (8 % de la palette)"><span>#98a6aa · 8 %</span></button><button type="button" data-hex="#bacfd3" style="--c:#bacfd3;--part:19" aria-label="Copier la couleur #bacfd3 (19 % de la palette)"><span>#bacfd3 · 19 %</span></button><button type="button" data-hex="#dfe9ea" style="--c:#dfe9ea;--part:37" aria-label="Copier la couleur #dfe9ea (37 % de la palette)"><span>#dfe9ea · 37 %</span></button></div>
+              <p class="palette-legende">Palette dominante de ce lieu dans le film · cliquez pour copier</p>
+            </div>
+          </article>
+          <article class="lieu reveal">
+            <div class="lieu-image"><div class="visuel visuel--desert" role="img" aria-label="Illustration originale : ville en ruines dans une brume orange"></div></div>
+            <div>
+              <h3>Las Vegas, la ville orange <span class="jp" aria-hidden="true">砂</span></h3>
+              <p>Une ville morte, irradiée, baignée d’une poussière orange. Pour la recréer, l’équipe a étudié des images de tempêtes de sable au Sahara, en Arabie saoudite et à Sydney.</p>
+              <div class="palette" role="group" aria-label="Palette du lieu"><button type="button" data-hex="#332014" style="--c:#332014;--part:8" aria-label="Copier la couleur #332014 (8 % de la palette)"><span>#332014 · 8 %</span></button><button type="button" data-hex="#7a3a10" style="--c:#7a3a10;--part:28" aria-label="Copier la couleur #7a3a10 (28 % de la palette)"><span>#7a3a10 · 28 %</span></button><button type="button" data-hex="#a15114" style="--c:#a15114;--part:20" aria-label="Copier la couleur #a15114 (20 % de la palette)"><span>#a15114 · 20 %</span></button><button type="button" data-hex="#e28212" style="--c:#e28212;--part:13" aria-label="Copier la couleur #e28212 (13 % de la palette)"><span>#e28212 · 13 %</span></button><button type="button" data-hex="#f1b16d" style="--c:#f1b16d;--part:11" aria-label="Copier la couleur #f1b16d (11 % de la palette)"><span>#f1b16d · 11 %</span></button><button type="button" data-hex="#fde2b9" style="--c:#fde2b9;--part:20" aria-label="Copier la couleur #fde2b9 (20 % de la palette)"><span>#fde2b9 · 20 %</span></button></div>
+              <p class="palette-legende">Palette dominante de ce lieu dans le film · cliquez pour copier</p>
+            </div>
+          </article>
+          <article class="lieu reveal">
+            <div class="lieu-image"><div class="visuel visuel--or" role="img" aria-label="Illustration originale : reflets d'eau dorés dans l'obscurité"></div></div>
+            <div>
+              <h3>Le siège de Wallace <span class="jp" aria-hidden="true">金</span></h3>
+              <p>Ambre, or et noir profond. Dans le bureau de Wallace, des reflets d’eau ondulent sur les murs de béton : un temple autant qu’un siège social.</p>
+              <div class="palette" role="group" aria-label="Palette du lieu"><button type="button" data-hex="#160e0a" style="--c:#160e0a;--part:22" aria-label="Copier la couleur #160e0a (22 % de la palette)"><span>#160e0a · 22 %</span></button><button type="button" data-hex="#21140b" style="--c:#21140b;--part:27" aria-label="Copier la couleur #21140b (27 % de la palette)"><span>#21140b · 27 %</span></button><button type="button" data-hex="#2b190a" style="--c:#2b190a;--part:35" aria-label="Copier la couleur #2b190a (35 % de la palette)"><span>#2b190a · 35 %</span></button><button type="button" data-hex="#5f320a" style="--c:#5f320a;--part:6" aria-label="Copier la couleur #5f320a (6 % de la palette)"><span>#5f320a · 6 %</span></button><button type="button" data-hex="#915718" style="--c:#915718;--part:5" aria-label="Copier la couleur #915718 (5 % de la palette)"><span>#915718 · 5 %</span></button><button type="button" data-hex="#c79659" style="--c:#c79659;--part:4" aria-label="Copier la couleur #c79659 (4 % de la palette)"><span>#c79659 · 4 %</span></button></div>
+              <p class="palette-legende">Palette dominante de ce lieu dans le film · cliquez pour copier</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Technologies du futur -->
+    <section class="section" id="technologies">
+      <span class="jp-vertical" aria-hidden="true">未来技術</span>
+      <div class="container">
+        <p class="eyebrow">Technologies du futur</p>
+        <h2 class="titre-section">Le quotidien <strong>en 2049</strong></h2>
+        <div class="texte narrow" style="margin-bottom:2rem">
+          <p>Le film montre peu de gadgets spectaculaires. Ses technologies sont usées, banales, intégrées à la vie de tous les jours, ce qui les rend d’autant plus crédibles.</p>
+        </div>
+        <div class="techs">
+          <article class="tech reveal"><span class="code">Biotechnologie</span><h3>Les réplicants</h3><p>Des êtres humains conçus par génie génétique, plus forts et plus résistants, fabriqués pour les colonies. Les modèles récents portent un numéro de série inscrit dans l’œil.</p></article>
+          <article class="tech reveal"><span class="code">Transport</span><h3>Le spinner</h3><p>La voiture volante de la police. Celle de K, marquée du logo Peugeot, embarque un petit drone de reconnaissance qu’il peut lancer à distance.</p></article>
+          <article class="tech reveal"><span class="code">Intelligence artificielle</span><h3>Joi et l’émanateur</h3><p>Un hologramme de compagnie projeté depuis le plafond de l’appartement. L’émanateur, un boîtier portable, lui permet de suivre K partout, au risque d’être détruite avec lui.</p></article>
+          <article class="tech reveal"><span class="code">Contrôle</span><h3>Le test de référence</h3><p>Après chaque mission, K répète des mots sous la pression d’un examinateur. Le moindre écart émotionnel est détecté. Le texte s’inspire d’un poème du roman <em>Feu pâle</em> de Nabokov.</p></article>
+          <article class="tech reveal"><span class="code">Mémoire</span><h3>Les souvenirs implantés</h3><p>Des souvenirs fabriqués par des artistes comme Ana Stelline, pour donner aux réplicants une stabilité émotionnelle. Une experte peut reconnaître un souvenir réellement vécu.</p></article>
+          <article class="tech reveal"><span class="code">Archives</span><h3>L’après-Blackout</h3><p>En 2022, une impulsion électromagnétique a effacé une grande partie des données numériques. Les archives d’avant sont rares, souvent sur supports physiques : l’enquête de K s’en trouve compliquée.</p></article>
+          <article class="tech reveal"><span class="code">Climat</span><h3>Le mur marin</h3><p>Une digue gigantesque protège le bassin de Los Angeles de la montée des océans. Le combat final se déroule à son pied, sous des vagues énormes.</p></article>
+          <article class="tech reveal"><span class="code">Agriculture</span><h3>Les fermes synthétiques</h3><p>Le film s’ouvre sur des champs de panneaux et de serres à perte de vue. La nourriture de 2049 est fabriquée par Wallace et vendue en distributeurs.</p></article>
+        </div>
+
+        <h3 class="hud hud--accent" style="margin-top:3.5rem">Les générations de réplicants</h3>
+        <ol class="nexus">
+          <li><span>Tyrell · 2019</span><b>Nexus-6</b><p>Durée de vie limitée à quatre ans. Roy Batty et ses compagnons, dans le premier film.</p></li>
+          <li><span>Tyrell · prototype</span><b>Nexus-7</b><p>Rachael, réplicante expérimentale dotée de faux souvenirs.</p></li>
+          <li><span>Tyrell · 2020</span><b>Nexus-8</b><p>Durée de vie illimitée. Interdits après le Blackout, traqués en 2049. Sapper Morton en fait partie.</p></li>
+          <li><span>Wallace · 2036</span><b>Nexus-9</b><p>Conçus pour obéir sans discuter. K et Luv sont des Nexus-9.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Musique -->
+    <section class="section section--sombre section--bande" id="musique">
+      <div class="container musique">
+        <div class="reveal">
+          <p class="eyebrow">La musique</p>
+          <h2 class="titre-section">Zimmer, Wallfisch <strong>et l’ombre de Vangelis</strong></h2>
+          <div class="texte">
+            <p>Le compositeur islandais Jóhann Jóhannsson, fidèle de Villeneuve (<em>Prisoners</em>, <em>Sicario</em>, <em>Premier Contact</em>), devait d’abord signer la musique. Le réalisateur et lui ont mis fin à leur collaboration, et Hans Zimmer et Benjamin Wallfisch l’ont remplacé à l’été 2017, quelques mois seulement avant la sortie.</p>
+            <p>Leur partition mêle nappes de synthétiseurs, basses saturées qui font vibrer la salle et longs silences. Elle renoue avec le son du Yamaha CS-80, le synthétiseur de Vangelis pour le film de 1982, et reprend son thème <em>Tears in Rain</em> dans un moment clé.</p>
+            <p>Le film utilise aussi des chansons : dans le casino de Las Vegas, des hologrammes d’Elvis Presley et de Frank Sinatra se produisent encore devant une salle vide.</p>
+          </div>
+          <div class="groupe-boutons" style="margin-top:1.6rem">
+            <a class="bouton" href="https://open.spotify.com/search/Blade%20Runner%202049%20Original%20Motion%20Picture%20Soundtrack" target="_blank" rel="noopener">Écouter la bande originale ↗</a>
+          </div>
+        </div>
+        <div class="reveal">
+          <h3 class="hud hud--accent" style="margin-bottom:0.6rem">Huit morceaux de l’album</h3>
+          <ol class="pistes">
+            <li><div><b>2049</b><span>L’ouverture : un grondement immense sur les fermes synthétiques.</span></div></li>
+            <li><div><b>Sapper’s Tree</b><span>La ferme, l’arbre mort, le premier mystère.</span></div></li>
+            <li><div><b>Rain</b><span>Los Angeles, la nuit et la pluie.</span></div></li>
+            <li><div><b>Wallace</b><span>L’empire doré, solennel et menaçant.</span></div></li>
+            <li><div><b>Mesa</b><span>Le désert orange de Las Vegas.</span></div></li>
+            <li><div><b>Joi</b><span>Le thème le plus doux de l’album.</span></div></li>
+            <li><div><b>Sea Wall</b><span>Le combat final face à l’océan.</span></div></li>
+            <li><div><b>Tears in the Rain</b><span>Reprise du thème composé par Vangelis en 1982.</span></div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Console d'ambiance -->
+    <section class="section" id="ambiance">
+      <div class="container">
+        <div class="deux-colonnes" style="align-items:start">
+          <div>
+            <p class="eyebrow">Ambiance sonore</p>
+            <h2 class="titre-section">Station <strong>Los Angeles, 2049</strong></h2>
+            <div class="texte">
+              <p>Faute de pouvoir diffuser la bande originale, ce site fabrique sa propre ambiance, générée en direct par votre navigateur : pluie, nappes de synthétiseur dans l’esprit du CS-80, rumeur de la ville et passages de spinners.</p>
+              <p>Activez ou coupez chaque couche, réglez le volume, puis continuez la visite : l’ambiance vous suit tant que la page reste ouverte. Le bouton « Ambiance » de l’en-tête la contrôle aussi.</p>
+            </div>
+          </div>
+          <div class="console viseur" data-console>
+            <div class="console-tete">
+              <span class="hud" style="color:#e87fd6">● Synthèse en direct · Web Audio</span>
+              <button class="bouton bouton--plein bouton--petit" type="button" data-console-lecture aria-pressed="false"><span class="etiquette">Lancer l’ambiance</span></button>
+            </div>
+            <canvas aria-hidden="true"></canvas>
+            <div class="console-pistes" role="group" aria-label="Couches sonores">
+              <button class="couche" type="button" data-couche="pluie" aria-pressed="true"><b>Pluie</b><span>Bruit filtré, gouttes</span></button>
+              <button class="couche" type="button" data-couche="nappe" aria-pressed="true"><b>Nappe</b><span>Synthé analogique</span></button>
+              <button class="couche" type="button" data-couche="ville" aria-pressed="true"><b>Ville</b><span>Rumeur, néons</span></button>
+              <button class="couche" type="button" data-couche="spinner" aria-pressed="true"><b>Spinners</b><span>Passages aléatoires</span></button>
+            </div>
+            <div class="console-volume">
+              <label for="volume-ambiance">Volume</label>
+              <input type="range" id="volume-ambiance" min="0" max="100" value="70">
+              <output id="volume-sortie" for="volume-ambiance">70%</output>
+            </div>
+            <small>Sons synthétisés par le navigateur. Ce n’est pas la musique du film.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grille">
+        <div>
+          <p class="footer-merci">Merci d’être passé, j’espère que ça vous a plu.</p>
+          <p>Un site d’analyse consacré à <em>Blade Runner 2049</em> (Denis Villeneuve, 2017), réalisé dans le cadre d’un projet universitaire.</p>
+          <button class="origami" type="button" data-origami aria-controls="origami-msg"><svg viewBox="0 0 40 32" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"><path d="M8 12 14 6l9 1 6 4-2 8-11 1-8-3z"/><path d="M14 6l2 7 13-2M16 13l-8-1M16 13l0 7"/><path d="M29 11l5-2 3 3-2 4-6-1M34 9l1 7"/><path d="M11 17l-1 9M15 20l1 6M24 19l1 7M27 19l2 6"/></svg><span>Un mouton en papier ?</span></button>
+          <p class="origami-message" id="origami-msg" hidden></p>
+        </div>
+        <nav aria-label="Plan du site">
+          <h4>Explorer</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="avis.html">Avis</a></li>
+            <li><a href="personnages.html">Personnages</a></li>
+            <li><a href="univers.html">Univers visuel</a></li>
+            <li><a href="themes.html">Thèmes</a></li>
+            <li><a href="inspirations.html">Inspirations</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h4>Le film</h4>
+          <ul class="footer-film">
+            <li>Réalisation : Denis Villeneuve</li>
+            <li>Sortie en France : 4 octobre 2017</li>
+            <li>Durée : 2 h 43</li>
+            <li>Suite de <em>Blade Runner</em> (Ridley Scott, 1982)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-mentions">
+        <p>Site de fan non officiel, sans lien avec Alcon Entertainment, Warner Bros. ou Sony Pictures. Aucune image, aucun logo ni aucune réplique du film n’est reproduit : les illustrations sont des créations originales et les idées du film sont reformulées. <em>Blade Runner</em> et <em>Blade Runner 2049</em> sont des marques de leurs propriétaires respectifs.</p>
+        <p class="hud">Los Angeles · 2049</p>
+      </div>
+    </div>
+    <div class="footer-jp" aria-hidden="true">ブレードランナー</div>
+  </footer>
+</body>
+</html>

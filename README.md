@@ -10,6 +10,7 @@ En ligne sur **https://quentinbertails.github.io**, publié automatiquement par 
 | `index.html` | Page d'accueil : services, formules, réalisation, conseils, questions, contact. |
 | `services/` | Une page par service : création de site vitrine, refonte, maintenance et hébergement, traduction en anglais. |
 | `conseils/` | Les articles de conseils et leur page d'accueil (`conseils/index.html`). |
+| `realisations/blade-runner-2049/` | Le projet d'étude (site d'analyse de fan), autonome, avec ses propres styles et scripts. Non indexé par Google. Aucune image ni réplique du film : à garder ainsi. |
 | `mentions-legales.html` | Mentions légales et politique de confidentialité. |
 | `404.html` | Page affichée quand une adresse n'existe pas. |
 | `assets/css/site.css` | Styles communs à toutes les pages. |
@@ -31,7 +32,8 @@ Le plus simple : ouvrir le fichier sur GitHub, cliquer sur le crayon, modifier, 
 - [ ] **SIRET** : une fois la micro-entreprise créée, remplacer « En cours d'attribution » dans `mentions-legales.html`.
 - [ ] **Adresse** : la loi demande une adresse dans les mentions légales d'un site professionnel. Mettre une adresse de domiciliation à la place de « Communiquée sur simple demande par email ».
 - [ ] **Formspree** (facultatif) : créer un formulaire sur formspree.io, puis coller son adresse dans `FORM_ENDPOINT`, en haut de `assets/js/site.js`. Mettre alors à jour la ligne « Comment » de la section Données personnelles des mentions légales (les messages transitent par Formspree).
-- [ ] **Réalisations** : ajouter un lien vers le site Blade Runner s'il est en ligne ; remplacer ou compléter par de vrais sites clients dès qu'ils existent, avec l'accord du client.
+- [ ] **Réalisations** : compléter par de vrais sites clients dès qu'ils existent, avec l'accord du client.
+- [ ] **Blade Runner, page Avis** : réécrire le texte avec ton propre ressenti (c'est présenté comme ton avis).
 - [ ] **Google Business Profile** : créer la fiche en « zone desservie » (l'adresse n'est pas affichée).
 - [ ] **Nom de domaine** (facultatif) : après achat, le renseigner dans Settings → Pages → Custom domain, puis remplacer `https://quentinbertails.github.io` dans tous les fichiers `.html`, `sitemap.xml` et `robots.txt`.
 

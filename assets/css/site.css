@@ -616,7 +616,8 @@ p { margin: 0; }
 
 /* ---------- Réalisation : projet d'étude ---------- */
 .work-grid { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); }
-.thumb-br { background: #0E1319; }
+.thumb-br { display: block; background: #0E1319; }
+.work-link { margin-top: 20px; align-self: flex-start; }
 .thumb-br::before {
   content: ""; position: absolute; inset: 0;
   background: repeating-linear-gradient(104deg, transparent 0 18px, rgba(150, 190, 220, .10) 18px 19px);

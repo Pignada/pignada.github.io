@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  
+  <title>Personnages · Blade Runner 2049</title>
+  <meta name="description" content="Les douze personnages principaux de Blade Runner 2049 en dossiers du LAPD, leur réseau de relations et le test : quel personnage es-tu ?">
+  <meta name="theme-color" content="#000000">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23000'/%3E%3Ccircle cx='32' cy='30' r='17' fill='%236e0202'/%3E%3Crect x='0' y='44' width='64' height='2' fill='%23ff4141'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/personnages.js" defer></script>
+</head>
+<body data-zone="personnages">
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <div class="qb-bar"><p>Projet d’étude réalisé par <a href="/">Quentin Bertails</a>, création de sites web.</p><a class="qb-bar-retour" href="/#realisations">Retour au portfolio</a></div>
+
+  <header class="site-header">
+    <!-- Case à cocher qui contrôle l'ouverture du menu mobile (fonctionne sans JavaScript) -->
+    <input type="checkbox" id="hamburger-checkbox" class="hamburger-checkbox" aria-label="Ouvrir ou fermer le menu">
+    <label for="hamburger-checkbox" class="hamburger" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <a href="index.html" class="logo-link" aria-label="Retour à l’accueil">
+      <span class="wordmark" aria-label="Blade Runner 2049, le site d’analyse"><span class="wordmark-titre" aria-hidden="true">Blade Runner <b>2049</b></span><span class="wordmark-sous" aria-hidden="true">Le site d’analyse</span></span>
+    </a>
+
+    <nav class="nav-principale" aria-label="Navigation principale">
+      <ul class="menu">
+        <li><a href="index.html">ACCUEIL</a><span class="jp-menu" aria-hidden="true">ようこそ</span></li>
+        <li><a href="avis.html">AVIS</a><span class="jp-menu" aria-hidden="true">感想</span></li>
+        <li><a href="personnages.html" aria-current="page">PERSONNAGES</a><span class="jp-menu" aria-hidden="true">登場人物</span></li>
+        <li><a href="univers.html">UNIVERS VISUEL</a><span class="jp-menu" aria-hidden="true">世界観</span></li>
+        <li><a href="themes.html">THÈMES</a><span class="jp-menu" aria-hidden="true">主題</span></li>
+        <li><a href="inspirations.html">INSPIRATIONS</a><span class="jp-menu" aria-hidden="true">影響</span></li>
+      </ul>
+    </nav>
+
+    <div class="outils">
+      <button class="outil" id="btn-pluie" type="button" aria-pressed="false" title="Activer ou couper l’effet de pluie"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M4 2 2.5 7M8.5 1 7 6M13 2l-1.5 5M5 9l-1.5 5M10 9l-1.5 5"/></svg><span class="label-outil">Pluie</span><span class="visually-hidden"> (effet visuel)</span></button>
+      <button class="outil" id="btn-son" type="button" aria-pressed="false" title="Ambiance sonore générée en direct"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M2 6v4M5 3.5v9M8 5v6M11 2v12M14 6.5v3"/></svg><span class="label-outil">Ambiance</span><span class="visually-hidden"> sonore</span></button>
+    </div>
+  </header>
+
+<main id="contenu">
+    <section class="imagebaniere visuel--nuit">
+      <span class="jp-vertical" aria-hidden="true">登場人物</span>
+      <div class="container">
+        <div class="hud-ligne"><span class="hud hud--accent">● Fichier central du LAPD</span><span class="hud">12 dossiers</span></div>
+        <h1>Les personnages <br><strong>principaux</strong></h1>
+        <p>Découvrez les personnages, plus passionnants les uns que les autres, de <em>Blade Runner 2049</em>.</p>
+        <div class="groupe-boutons">
+          <a class="bouton bouton--plein" href="#dossiers">Ouvrir les dossiers</a>
+          <a class="bouton" href="#test">Passer le test</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dossiers -->
+    <section class="section" id="dossiers">
+      <div class="container">
+        <p class="eyebrow">Dossiers</p>
+        <h2 class="titre-section">Humains, réplicants <strong>et IA</strong></h2>
+        <div class="texte narrow" style="margin-bottom:2rem">
+          <p>Cliquez sur une fiche pour ouvrir le dossier complet : interprète, nature, rôle dans l’histoire et analyse. Les révélations sur l’intrigue restent floutées tant que les spoilers sont masqués ; vous pouvez aussi cliquer sur un passage flouté pour le lire.</p>
+        </div>
+        <div class="barre-outils">
+          <div class="filtres" role="group" aria-label="Filtrer les personnages">
+            <button class="filtre" type="button" data-filtre="tous" aria-pressed="true">Tous</button>
+            <button class="filtre" type="button" data-filtre="replicant" aria-pressed="false">Réplicants</button>
+            <button class="filtre" type="button" data-filtre="humain" aria-pressed="false">Humains</button>
+            <button class="filtre" type="button" data-filtre="ia" aria-pressed="false">IA</button>
+            <button class="filtre" type="button" data-filtre="inconnu" aria-pressed="false">Incertain</button>
+          </div>
+          <button class="interrupteur" type="button" data-spoilers aria-pressed="false"><span class="piste" aria-hidden="true"></span><span class="texte-interrupteur">Spoilers masqués</span></button>
+        </div>
+        <div class="personnages" id="grille-personnages" aria-live="polite"></div>
+        <noscript><p class="texte">Activez JavaScript pour afficher les dossiers des personnages.</p></noscript>
+      </div>
+    </section>
+
+    <!-- Réseau -->
+    <section class="section section--sombre section--bande" id="reseau-section">
+      <div class="container">
+        <p class="eyebrow">Réseau</p>
+        <h2 class="titre-section">Qui est lié <strong>à qui ?</strong></h2>
+        <div class="texte narrow" style="margin-bottom:1.6rem">
+          <p>K est au centre de toutes les relations. Les liens en pointillés rouges, qui dévoilent l’intrigue, n’apparaissent que lorsque les spoilers sont affichés. Cliquez sur un personnage pour ouvrir son dossier.</p>
+        </div>
+        <div class="reseau reveal" id="reseau"></div>
+        <p class="hud indice-defilement">Faites glisser le schéma vers la droite pour le voir en entier →</p>
+        <div class="groupe-boutons" style="margin-top:1rem; gap:1.4rem">
+          <span class="puce puce--replicant">Réplicant</span>
+          <span class="puce puce--humain">Humain</span>
+          <span class="puce puce--ia">IA</span>
+          <span class="puce puce--inconnu">Incertain</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz -->
+    <section class="section" id="test">
+      <div class="container">
+        <p class="eyebrow">Test de Voight-Kampff, version fan</p>
+        <h2 class="titre-section">Quel personnage <strong>es-tu ?</strong></h2>
+        <div class="texte narrow" style="margin-bottom:2rem">
+          <p>Dans le premier film, le test de Voight-Kampff mesure les réactions de l’œil pour distinguer un humain d’un réplicant. Ici, sept questions suffisent pour savoir de quel personnage vous êtes le plus proche.</p>
+        </div>
+        <div class="quiz viseur" id="quiz">
+          <div class="quiz-oeil" aria-hidden="true">
+            <div class="grille-scan"></div>
+            <div class="oeil"></div>
+            <div class="mesures"><span data-mesure="dilatation">Pupille 3,7 mm</span><span data-mesure="temps">Réaction — s</span></div>
+          </div>
+          <div class="quiz-zone"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interviews -->
+    <section class="section section--sombre section--bande">
+      <div class="container deux-colonnes">
+        <div>
+          <p class="eyebrow">Interviews</p>
+          <h2 class="titre-section">Les acteurs <strong>en parlent</strong></h2>
+          <div class="texte">
+            <p>Pour aller plus loin, retrouvez les interviews de l’équipe données lors de la sortie du film. Ces liens lancent une recherche sur YouTube, dans un nouvel onglet.</p>
+          </div>
+        </div>
+        <div class="liens">
+          <a href="https://www.youtube.com/results?search_query=Ryan+Gosling+Harrison+Ford+interview+Blade+Runner+2049" target="_blank" rel="noopener"><b>Ryan Gosling et Harrison Ford</b><span>Recherche YouTube ↗</span></a>
+          <a href="https://www.youtube.com/results?search_query=Ana+de+Armas+interview+Joi+Blade+Runner+2049" target="_blank" rel="noopener"><b>Ana de Armas, à propos de Joi</b><span>Recherche YouTube ↗</span></a>
+          <a href="https://www.youtube.com/results?search_query=Sylvia+Hoeks+Luv+interview+Blade+Runner+2049" target="_blank" rel="noopener"><b>Sylvia Hoeks, à propos de Luv</b><span>Recherche YouTube ↗</span></a>
+          <a href="https://www.youtube.com/results?search_query=Denis+Villeneuve+interview+Blade+Runner+2049" target="_blank" rel="noopener"><b>Denis Villeneuve, le réalisateur</b><span>Recherche YouTube ↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fenêtre de dossier -->
+    <dialog class="dossier" id="dossier" aria-labelledby="dossier-titre">
+      <button class="dossier-fermer" type="button" aria-label="Fermer le dossier">×</button>
+      <div class="dossier-grille">
+        <div class="dossier-image"></div>
+        <div class="dossier-contenu"></div>
+      </div>
+    </dialog>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grille">
+        <div>
+          <p class="footer-merci">Merci d’être passé, j’espère que ça vous a plu.</p>
+          <p>Un site d’analyse consacré à <em>Blade Runner 2049</em> (Denis Villeneuve, 2017), réalisé dans le cadre d’un projet universitaire.</p>
+          <button class="origami" type="button" data-origami aria-controls="origami-msg"><svg viewBox="0 0 40 32" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"><path d="M8 12 14 6l9 1 6 4-2 8-11 1-8-3z"/><path d="M14 6l2 7 13-2M16 13l-8-1M16 13l0 7"/><path d="M29 11l5-2 3 3-2 4-6-1M34 9l1 7"/><path d="M11 17l-1 9M15 20l1 6M24 19l1 7M27 19l2 6"/></svg><span>Un mouton en papier ?</span></button>
+          <p class="origami-message" id="origami-msg" hidden></p>
+        </div>
+        <nav aria-label="Plan du site">
+          <h4>Explorer</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="avis.html">Avis</a></li>
+            <li><a href="personnages.html">Personnages</a></li>
+            <li><a href="univers.html">Univers visuel</a></li>
+            <li><a href="themes.html">Thèmes</a></li>
+            <li><a href="inspirations.html">Inspirations</a></li>
+          </ul>
+        </nav>
+        <div>
+          <h4>Le film</h4>
+          <ul class="footer-film">
+            <li>Réalisation : Denis Villeneuve</li>
+            <li>Sortie en France : 4 octobre 2017</li>
+            <li>Durée : 2 h 43</li>
+            <li>Suite de <em>Blade Runner</em> (Ridley Scott, 1982)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-mentions">
+        <p>Site de fan non officiel, sans lien avec Alcon Entertainment, Warner Bros. ou Sony Pictures. Aucune image, aucun logo ni aucune réplique du film n’est reproduit : les illustrations sont des créations originales et les idées du film sont reformulées. <em>Blade Runner</em> et <em>Blade Runner 2049</em> sont des marques de leurs propriétaires respectifs.</p>
+        <p class="hud">Los Angeles · 2049</p>
+      </div>
+    </div>
+    <div class="footer-jp" aria-hidden="true">ブレードランナー</div>
+  </footer>
+</body>
+</html>
