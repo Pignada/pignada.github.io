@@ -56,5 +56,5 @@ La balise `google-site-verification` (dans `_includes/head.html`) ne doit jamais
 
 ## Identité visuelle
 
-Couleurs, typographie, logo et composants sont décrits dans la charte graphique : vert pin `#1D6A4C`, encre `#14201A`, brume `#F2F6F3`, police Schibsted Grotesk.
+Couleurs, typographie, logo et composants sont décrits dans la charte graphique : vert pin `#0B6A87`, encre `#102033`, brume `#EEF5F8`, police Schibsted Grotesk.
 L'exemple « Camping du Lac » de l'accueil utilise volontairement une autre identité (bleu nuit, sable, orange) : c'est un site client fictif.
