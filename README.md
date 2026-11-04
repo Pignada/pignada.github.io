@@ -8,8 +8,6 @@ En ligne sur **https://quentinbertails.github.io**, publié automatiquement par 
 | Fichier ou dossier | Rôle |
 |---|---|
 | `index.html` | Page d'accueil : services, formules, réalisation, conseils, questions, contact. |
-| `services/` | Une page par service : création de site vitrine, refonte, maintenance et hébergement, traduction en anglais. |
-| `conseils/` | Les articles de conseils et leur page d'accueil (`conseils/index.html`). |
 | `realisations/blade-runner-2049/` | Le projet d'étude (site d'analyse de fan), autonome, avec ses propres styles et scripts. Non indexé par Google. Aucune image ni réplique du film : à garder ainsi. |
 | `mentions-legales.html` | Mentions légales et politique de confidentialité. |
 | `404.html` | Page affichée quand une adresse n'existe pas. |
@@ -21,21 +19,40 @@ En ligne sur **https://quentinbertails.github.io**, publié automatiquement par 
 
 ## Modifier le site
 
-Le plus simple : ouvrir le fichier sur GitHub, cliquer sur le crayon, modifier, puis **Commit changes**. Le site se met à jour en une à deux minutes (suivi dans l'onglet **Actions**).
+### Avec l'interface d'édition (recommandé)
 
-- Le **menu** et le **pied de page** sont répétés dans chaque page : une modification doit être faite dans tous les fichiers `.html`.
-- Une **nouvelle page** doit aussi être ajoutée à `sitemap.xml`.
-- La balise `google-site-verification` en haut de `index.html` ne doit jamais être supprimée (elle prouve à Google que le site t'appartient).
+1. Aller sur **https://app.pagescms.org** et se connecter avec le compte GitHub `quentinbertails`.
+2. Autoriser l'accès au dépôt `quentinbertails.github.io`, puis l'ouvrir.
+3. Choisir une rubrique dans le menu : Réglages du site, Page d'accueil, Formules, Questions fréquentes, Articles de conseils, Pages services.
+4. Modifier, puis cliquer sur **Save**. Le site se met à jour en une à deux minutes.
+
+Pour écrire un nouvel article : **Articles de conseils → Add an entry**. Il apparaît automatiquement sur la page Conseils, sur l'accueil, dans le pied de page et dans le plan du site.
+
+### Organisation des fichiers
+
+Le site est construit par Jekyll (intégré à GitHub Pages) :
+
+| Dossier ou fichier | Contenu |
+|---|---|
+| `_data/reglages.yml` | Email, téléphone, secteur, SIRET, adresse, Formspree. |
+| `_data/accueil.yml`, `_data/formules.yml`, `_data/faq.yml` | Textes de la page d'accueil. |
+| `_conseils/*.md` | Un fichier par article. |
+| `_services/*.md` | Un fichier par page service. |
+| `_layouts/`, `_includes/` | Gabarits (mise en page commune, en-tête, pied de page). |
+| `index.html`, `conseils/index.html`, `mentions-legales.html`, `404.html` | Pages qui utilisent ces gabarits. |
+| `.pages.yml` | Configuration de l'interface d'édition. |
+
+La balise `google-site-verification` (dans `_includes/head.html`) ne doit jamais être supprimée.
 
 ## À faire
 
-- [ ] **SIRET** : une fois la micro-entreprise créée, remplacer « En cours d'attribution » dans `mentions-legales.html`.
-- [ ] **Adresse** : la loi demande une adresse dans les mentions légales d'un site professionnel. Mettre une adresse de domiciliation à la place de « Communiquée sur simple demande par email ».
-- [ ] **Formspree** (facultatif) : créer un formulaire sur formspree.io, puis coller son adresse dans `FORM_ENDPOINT`, en haut de `assets/js/site.js`. Mettre alors à jour la ligne « Comment » de la section Données personnelles des mentions légales (les messages transitent par Formspree).
+- [ ] **SIRET** : une fois la micro-entreprise créée, le renseigner dans **Réglages du site**.
+- [ ] **Adresse** : la loi demande une adresse dans les mentions légales d'un site professionnel. La renseigner dans **Réglages du site** (une domiciliation suffit).
+- [ ] **Formspree** (facultatif) : créer un formulaire sur formspree.io, puis coller son adresse dans `FORM_ENDPOINT`, dans **Réglages du site** de l'interface d'édition (le texte des mentions légales s'adapte tout seul).
 - [ ] **Réalisations** : compléter par de vrais sites clients dès qu'ils existent, avec l'accord du client.
 - [ ] **Blade Runner, page Avis** : réécrire le texte avec ton propre ressenti (c'est présenté comme ton avis).
 - [ ] **Google Business Profile** : créer la fiche en « zone desservie » (l'adresse n'est pas affichée).
-- [ ] **Nom de domaine** (facultatif) : après achat, le renseigner dans Settings → Pages → Custom domain, puis remplacer `https://quentinbertails.github.io` dans tous les fichiers `.html`, `sitemap.xml` et `robots.txt`.
+- [ ] **Nom de domaine** (facultatif) : après achat, le renseigner dans Settings → Pages → Custom domain, puis remplacer `https://quentinbertails.github.io` dans `_config.yml` et `robots.txt`.
 
 ## Identité visuelle
 

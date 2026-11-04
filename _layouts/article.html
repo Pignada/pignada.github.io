@@ -1,0 +1,48 @@
+---
+layout: base
+---
+{%- assign mois = "janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,décembre" | split: "," -%}
+{%- assign m = page.date | date: "%-m" | minus: 1 -%}
+{%- assign minutes = content | number_of_words | plus: 100 | divided_by: 200 -%}
+{%- if minutes < 3 %}{% assign minutes = 3 %}{% endif -%}
+{%- assign autres = site.conseils | sort: "date" | reverse -%}
+<main id="contenu">
+  {% include fil.html parent_nom="Conseils" parent_url="/conseils/" nom=page.titre_court %}
+  <article>
+    <header class="wrap article-head">
+      <h1>{{ page.titre }}</h1>
+      <p class="hero-lead">{{ page.chapo }}</p>
+      <p class="article-meta">Publié le <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%-d" }} {{ mois[m] }} {{ page.date | date: "%Y" }}</time>, par Quentin Bertails. Lecture : {{ minutes }} minutes.</p>
+    </header>
+    <div class="wrap">
+      <div class="prose">
+{{ content }}
+      </div>
+    </div>
+  </article>
+
+  <section class="section section-surface related">
+    <div class="wrap">
+      <h2>À lire aussi</h2>
+      <div class="article-cards">
+{%- assign n = 0 -%}
+{%- for a in autres %}{% if a.url != page.url and n < 3 %}{% assign n = n | plus: 1 %}{% include carte-article.html a=a %}{% endif %}{% endfor %}
+      </div>
+    </div>
+  </section>
+
+  {% include cta.html titre="Besoin d'aide pour votre site ?" texte="Création, refonte, maintenance ou traduction : parlons de votre projet." %}
+</main>
+
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [
+  {"@type": "Article", "headline": {{ page.title | jsonify }}, "description": {{ page.description | jsonify }}, "inLanguage": "fr",
+   "datePublished": "{{ page.date | date: '%Y-%m-%d' }}", "dateModified": "{{ page.last_modified_at | default: page.date | date: '%Y-%m-%d' }}",
+   "author": {"@type": "Person", "name": "Quentin Bertails", "url": "{{ site.url }}/"}, "publisher": {"@type": "Person", "name": "Quentin Bertails", "url": "{{ site.url }}/"},
+   "mainEntityOfPage": "{{ site.url }}{{ page.url }}", "image": "{{ site.url }}/assets/og-image.png"},
+  {"@type": "BreadcrumbList", "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "{{ site.url }}/"},
+    {"@type": "ListItem", "position": 2, "name": "Conseils", "item": "{{ site.url }}/conseils/"},
+    {"@type": "ListItem", "position": 3, "name": {{ page.titre_court | jsonify }}, "item": "{{ site.url }}{{ page.url }}"}]}
+]}
+</script>

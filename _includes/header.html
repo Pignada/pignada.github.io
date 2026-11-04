@@ -1,0 +1,25 @@
+{%- assign actif = page.actif | default: page.collection -%}
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/" aria-label="Quentin Bertails, création de sites web, accueil">
+      {% include marque.html %}
+      <span class="brand-text">
+        <span class="brand-name">Quentin Bertails</span>
+        <span class="brand-sub">Création de sites web</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="sr-only">Ouvrir le menu</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="/#services"{% if actif == "services" %} aria-current="page"{% endif %}>Services</a></li>
+        <li><a href="/#formules">Formules</a></li>
+        <li><a href="/conseils/"{% if actif == "conseils" %} aria-current="page"{% endif %}>Conseils</a></li>
+        <li><a href="/#faq">Questions</a></li>
+        <li><a class="nav-cta" href="/#contact">Demander un devis</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

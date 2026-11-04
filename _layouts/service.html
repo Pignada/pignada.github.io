@@ -1,0 +1,109 @@
+---
+layout: base
+---
+{%- assign autres = site.services | sort: "ordre" -%}
+<main id="contenu">
+  {% include fil.html parent_nom="Services" parent_url="/#services" nom=page.nom %}
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>{{ page.h1 }}</h1>
+      <p class="hero-lead">{{ page.chapo }}</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/?besoin={{ page.besoin }}#contact">Demander un devis gratuit</a>
+        <a class="btn btn-ghost" href="/#formules">Voir les formules</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-surface">
+    <div class="wrap split">
+      <h2>{{ page.pour_qui_titre }}</h2>
+      <div class="lead-text">
+{{ content }}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Ce qui est inclus</h2>
+        <p>{{ page.inclus_intro }}</p>
+      </div>
+      <ul class="check-list cols">
+{%- for x in page.inclus %}
+        <li>{{ x }}</li>
+{%- endfor %}
+      </ul>
+    </div>
+  </section>
+{% assign alt = false %}
+{%- if page.formules and page.formules.size > 0 %}
+  <section class="section section-surface">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>{{ page.formules_titre }}</h2>
+        <p>{{ page.formules_intro }}</p>
+      </div>
+      <div class="option-grid{% if page.formules.size == 2 %} two{% endif %}">
+{%- for o in page.formules %}
+        <article class="option{% if o.mise_en_avant %} option-featured{% endif %}"><h3>{{ o.nom }}</h3><p>{{ o.texte }}</p></article>
+{%- endfor %}
+      </div>
+      <p class="more-link"><a href="/?besoin={{ page.besoin }}#contact">Demander un devis gratuit</a></p>
+    </div>
+  </section>
+{% assign alt = true %}
+{%- endif %}
+
+  <section class="section{% if alt == false %} section-surface{% endif %}">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Comment ça se passe</h2>
+        <p>Vous savez à chaque étape où en est votre projet, et rien n'est mis en ligne sans votre accord.</p>
+      </div>
+      <ol class="steps">
+{%- for e in page.etapes %}
+        <li class="step"><h3>{{ e.titre }}</h3><p>{{ e.texte }}</p></li>
+{%- endfor %}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section{% if alt %} section-surface{% endif %}">
+    <div class="wrap faq-grid">
+      <div class="faq-side">
+        <h2>Questions fréquentes</h2>
+        <p>Une autre question ? Posez-la-moi directement.</p>
+        <a class="btn btn-ghost" href="/?besoin={{ page.besoin }}#contact">Poser une question</a>
+      </div>
+      <div class="faq-list">
+{% include faq-liste.html questions=page.faq %}
+      </div>
+    </div>
+  </section>
+
+  {% include cta.html titre=page.cta_titre texte=page.cta_texte besoin=page.besoin %}
+
+  <section class="section section-surface related">
+    <div class="wrap">
+      <h2>Les autres services</h2>
+      <div class="article-cards">
+{%- for s in autres %}{% if s.url != page.url %}
+        <a class="article-card" href="{{ s.url }}"><h3>{{ s.nom }}</h3><p>{{ s.resume }}</p><span class="more">En savoir plus</span></a>
+{%- endif %}{% endfor %}
+      </div>
+    </div>
+  </section>
+</main>
+
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [
+  {"@type": "Service", "name": {{ page.nom | jsonify }}, "serviceType": {{ page.nom | jsonify }}, "description": {{ page.description | jsonify }}, "url": "{{ site.url }}{{ page.url }}", "areaServed": "Landes, France",
+   "provider": {"@type": "ProfessionalService", "@id": "{{ site.url }}/#entreprise", "name": "Quentin Bertails – Création de sites web", "url": "{{ site.url }}/"}},
+  {"@type": "BreadcrumbList", "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "{{ site.url }}/"},
+    {"@type": "ListItem", "position": 2, "name": {{ page.nom | jsonify }}, "item": "{{ site.url }}{{ page.url }}"}]},
+  {% include faq-jsonld.html questions=page.faq %}
+]}
+</script>

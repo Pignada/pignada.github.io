@@ -1,9 +1,9 @@
 /* Quentin Bertails — scripts du site (toutes les pages). */
 (function () {
-  /* Formulaire de contact.
-     Laisse vide pour ouvrir la messagerie du visiteur.
-     Avec Formspree : colle ici ton adresse, ex. "https://formspree.io/f/abcdwxyz" */
-  var FORM_ENDPOINT = "";
+  /* L'adresse Formspree se règle dans l'interface d'édition (Réglages du site).
+     Vide : le formulaire ouvre la messagerie du visiteur. */
+  var formEl = document.getElementById("contact-form");
+  var FORM_ENDPOINT = (formEl && formEl.getAttribute("data-endpoint")) || "";
 
   /* Année du pied de page */
   document.querySelectorAll(".js-year").forEach(function (el) { el.textContent = new Date().getFullYear(); });

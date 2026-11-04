@@ -1,0 +1,48 @@
+{%- assign r = site.data.reglages -%}
+{%- assign services_tries = site.services | sort: "ordre" -%}
+{%- assign conseils_tries = site.conseils | sort: "date" | reverse -%}
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div>
+        <a class="brand" href="/">
+          {% include marque.html %}
+          <span class="brand-text">
+            <span class="brand-name">Quentin Bertails</span>
+            <span class="brand-sub">Création de sites web</span>
+          </span>
+        </a>
+        <p class="footer-note">Création, refonte, maintenance et hébergement de sites web pour les commerces et activités de loisirs des Landes.</p>
+      </div>
+      <nav class="footer-col" aria-label="Services">
+        <h2>Services</h2>
+        <ul>
+{%- for s in services_tries %}
+          <li><a href="{{ s.url }}">{{ s.nom }}</a></li>
+{%- endfor %}
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Conseils">
+        <h2>Conseils</h2>
+        <ul>
+{%- for a in conseils_tries limit: 3 %}
+          <li><a href="{{ a.url }}">{{ a.titre_court }}</a></li>
+{%- endfor %}
+          <li><a href="/conseils/">Tous les conseils</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h2>Contact</h2>
+        <ul>
+          <li><a href="/#contact">Demander un devis</a></li>
+          <li><a href="mailto:{{ r.email }}">{{ r.email }}</a></li>
+          <li><a href="tel:{% include tel.html %}">{{ r.telephone }}</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="js-year">{{ site.time | date: "%Y" }}</span> Quentin Bertails</span>
+      <a class="link-btn" href="/mentions-legales.html">Mentions légales et confidentialité</a>
+    </div>
+  </div>
+</footer>

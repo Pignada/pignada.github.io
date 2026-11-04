@@ -1,0 +1,6 @@
+{%- for q in include.questions %}
+        <details>
+          <summary>{{ q.question }}</summary>
+          <div class="answer">{{ q.reponse | markdownify }}</div>
+        </details>
+{%- endfor %}

@@ -1,0 +1,31 @@
+# Configuration Jekyll (GitHub Pages construit le site à chaque modification)
+title: Quentin Bertails – Création de sites web
+url: https://quentinbertails.github.io
+lang: fr
+timezone: Europe/Paris
+markdown: kramdown
+
+collections:
+  services:
+    output: true
+    permalink: /services/:name:output_ext
+  conseils:
+    output: true
+    permalink: /conseils/:name:output_ext
+
+defaults:
+  - scope:
+      path: ""
+      type: services
+    values:
+      layout: service
+  - scope:
+      path: ""
+      type: conseils
+    values:
+      layout: article
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

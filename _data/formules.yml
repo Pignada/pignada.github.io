@@ -1,0 +1,60 @@
+titre: Une formule adaptée à chaque projet
+intro: 'Chaque commerce a des besoins différents. Choisissez la formule qui vous ressemble : après un premier échange, vous recevez un devis détaillé, gratuit et sans engagement.'
+creation:
+- nom: Page unique
+  description: Une seule page complète pour être trouvé et contacté facilement.
+  ideal: un artisan, un food truck, une activité saisonnière
+  inclus:
+  - Présentation, services, horaires
+  - Carte, itinéraire et contact
+  - Adapté au téléphone
+  - Mise en ligne incluse
+  mise_en_avant: false
+  badge: ''
+  bouton: Demander un devis
+  besoin: Création d'un site
+- nom: Site vitrine
+  description: Plusieurs pages pour présenter en détail votre offre et rassurer vos clients.
+  ideal: un commerce, un restaurant, un camping
+  inclus:
+  - Plusieurs pages selon vos besoins
+  - Formulaire de contact
+  - Référencement local de base
+  - Galerie photos
+  - Version anglaise en option
+  mise_en_avant: true
+  badge: Conseillé pour la plupart des commerces
+  bouton: Demander un devis
+  besoin: Création d'un site
+- nom: Sur mesure
+  description: Pour les projets plus complets ou un site existant à refaire entièrement.
+  ideal: une refonte, un site avec réservation ou en plusieurs langues
+  inclus:
+  - Refonte complète
+  - Réservation ou demande de disponibilité
+  - Site multilingue
+  - WordPress avec espace de gestion
+  mise_en_avant: false
+  badge: ''
+  bouton: Décrire mon projet
+  besoin: Refonte d'un site existant
+apres:
+- nom: Maintenance et hébergement
+  description: 'Un abonnement mensuel : votre site reste en ligne, à jour et sauvegardé, sans que vous ayez à y penser.'
+  inclus:
+  - Hébergement et connexion sécurisée
+  - Mises à jour et sauvegardes
+  - Petites modifications de contenu
+  bouton: En savoir plus
+  lien: /services/maintenance-hebergement.html
+  besoin: ''
+- nom: Intervention ponctuelle
+  description: Sans abonnement, pour une modification ou un dépannage précis, sur votre site ou un site existant.
+  inclus:
+  - Ajout d'une page ou d'une section
+  - Correction d'un problème d'affichage
+  - Mise à jour de tarifs ou de photos
+  bouton: Demander une intervention
+  lien: ''
+  besoin: Maintenance ou hébergement
+note: 'Le prix dépend du nombre de pages, des textes à rédiger et des fonctions souhaitées : il est fixé avec vous dans le devis, avant tout démarrage. Le nom de domaine est réservé à votre nom, et vous le gardez quoi qu''il arrive.'

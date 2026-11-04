@@ -318,9 +318,9 @@ p { margin: 0; }
 }
 .service-icon svg { width: 24px; height: 24px; }
 .service p { margin-top: 10px; color: var(--muted); max-width: 34rem; }
-.check-list { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 8px; }
-.check-list li { position: relative; padding-left: 28px; }
-.check-list li::before {
+.check-list, .lead-text ul { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 8px; }
+.check-list li, .lead-text ul li { position: relative; padding-left: 28px; }
+.check-list li::before, .lead-text ul li::before {
   content: ""; position: absolute; left: 0; top: .32em;
   width: 18px; height: 18px; border-radius: 50%;
   background: var(--accent-soft) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231D6A4C' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E") center / 12px no-repeat;
@@ -751,3 +751,8 @@ p { margin: 0; }
 .nf h1 { margin-top: 12px; font-size: clamp(2.1rem, 3.2vw + 1rem, 3.2rem); line-height: 1.05; }
 .nf p.nf-text { margin-top: 18px; color: var(--muted); font-size: 1.125rem; }
 .nf .hero-actions { margin-top: 32px; }
+
+/* Encadré dans les articles (bloc de citation en Markdown) */
+.prose blockquote { margin: 36px 0 0; padding: 24px 28px; background: var(--surface); border-radius: var(--radius-md); }
+.prose blockquote p:first-child { margin-top: 0; }
+.prose img { max-width: 100%; height: auto; border-radius: var(--radius-md); margin-top: 20px; }

@@ -1,0 +1,281 @@
+# Interface d'édition Pages CMS (https://app.pagescms.org)
+# Chaque entrée ci-dessous devient une rubrique modifiable dans l'interface.
+
+media:
+  input: assets/uploads
+  output: /assets/uploads
+
+content:
+  - name: reglages
+    label: Réglages du site
+    type: file
+    path: _data/reglages.yml
+    fields:
+      - name: email
+        label: Email de contact
+        type: string
+      - name: telephone
+        label: Téléphone
+        description: Au format 06 12 34 56 78. Le lien d'appel est créé automatiquement.
+        type: string
+      - name: secteur
+        label: Secteur d'intervention
+        type: string
+      - name: siret
+        label: Numéro SIRET
+        description: Affiché dans les mentions légales.
+        type: string
+      - name: adresse
+        label: Adresse professionnelle
+        description: Affichée dans les mentions légales (une adresse de domiciliation suffit).
+        type: string
+      - name: formspree
+        label: Adresse Formspree
+        description: Facultatif. Ex. https://formspree.io/f/abcd1234. Vide, le formulaire ouvre la messagerie du visiteur.
+        type: string
+
+  - name: accueil
+    label: Page d'accueil, en-tête
+    type: file
+    path: _data/accueil.yml
+    fields:
+      - name: titre
+        label: Grand titre
+        type: string
+      - name: chapo
+        label: Texte sous le titre
+        type: text
+      - name: points
+        label: Points forts (sous les boutons)
+        type: string
+        list: true
+
+  - name: formules
+    label: Formules
+    type: file
+    path: _data/formules.yml
+    fields:
+      - name: titre
+        label: Titre de la section
+        type: string
+      - name: intro
+        label: Introduction
+        type: text
+      - name: creation
+        label: Formules de création
+        type: object
+        list: true
+        fields:
+          - name: nom
+            label: Nom
+            type: string
+          - name: description
+            label: Description
+            type: text
+          - name: ideal
+            label: Idéal pour
+            type: string
+          - name: inclus
+            label: Ce qui est inclus
+            type: string
+            list: true
+          - name: mise_en_avant
+            label: Mettre en avant (cadre vert)
+            type: boolean
+          - name: badge
+            label: Badge (facultatif)
+            type: string
+          - name: bouton
+            label: Texte du bouton
+            type: string
+          - name: besoin
+            label: Besoin présélectionné dans le formulaire
+            type: select
+            options:
+              values: ["Création d'un site", "Refonte d'un site existant", "Maintenance ou hébergement", "Traduction en anglais", "Autre demande"]
+      - name: apres
+        label: Après la mise en ligne
+        type: object
+        list: true
+        fields:
+          - name: nom
+            label: Nom
+            type: string
+          - name: description
+            label: Description
+            type: text
+          - name: inclus
+            label: Ce qui est inclus
+            type: string
+            list: true
+          - name: bouton
+            label: Texte du bouton
+            type: string
+          - name: lien
+            label: Lien du bouton (facultatif)
+            description: Ex. /services/maintenance-hebergement.html. Vide, le bouton mène au formulaire.
+            type: string
+          - name: besoin
+            label: Besoin présélectionné dans le formulaire
+            type: select
+            options:
+              values: ["", "Création d'un site", "Refonte d'un site existant", "Maintenance ou hébergement", "Traduction en anglais", "Autre demande"]
+      - name: note
+        label: Note sous les formules
+        type: text
+
+  - name: faq
+    label: Questions fréquentes (accueil)
+    type: file
+    path: _data/faq.yml
+    fields:
+      - name: questions
+        label: Questions
+        type: object
+        list: true
+        fields:
+          - name: question
+            label: Question
+            type: string
+          - name: reponse
+            label: Réponse
+            type: text
+
+  - name: conseils
+    label: Articles de conseils
+    type: collection
+    path: _conseils
+    filename: "{primary}.md"
+    view:
+      primary: titre
+      fields: [titre, date]
+      sort: [date]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: titre
+        label: Titre de l'article
+        type: string
+        required: true
+      - name: title
+        label: Titre pour Google
+        description: Le titre affiché dans les résultats Google (« | Quentin Bertails » est ajouté automatiquement).
+        type: string
+      - name: titre_court
+        label: Titre court
+        description: Utilisé dans les cartes, le fil d'Ariane et le pied de page.
+        type: string
+      - name: description
+        label: Description pour Google
+        description: Une ou deux phrases, environ 150 caractères.
+        type: text
+      - name: chapo
+        label: Chapô (texte sous le titre)
+        type: text
+      - name: resume
+        label: Résumé (cartes)
+        type: text
+      - name: date
+        label: Date de publication
+        type: date
+      - name: body
+        label: Texte de l'article
+        type: rich-text
+
+  - name: services
+    label: Pages services
+    type: collection
+    path: _services
+    filename: "{primary}.md"
+    view:
+      primary: nom
+      fields: [nom, ordre]
+    fields:
+      - name: nom
+        label: Nom du service
+        type: string
+        required: true
+      - name: ordre
+        label: Ordre d'affichage
+        type: number
+      - name: besoin
+        label: Code du besoin (formulaire)
+        description: creation, refonte, maintenance ou traduction.
+        type: string
+      - name: title
+        label: Titre pour Google
+        type: string
+      - name: description
+        label: Description pour Google
+        type: text
+      - name: resume
+        label: Résumé (cartes)
+        type: text
+      - name: h1
+        label: Grand titre de la page
+        type: string
+      - name: chapo
+        label: Texte sous le titre
+        type: text
+      - name: pour_qui_titre
+        label: Titre de la première section
+        type: string
+      - name: body
+        label: Texte de la première section
+        type: rich-text
+      - name: inclus_intro
+        label: « Ce qui est inclus », introduction
+        type: text
+      - name: inclus
+        label: Ce qui est inclus
+        type: string
+        list: true
+      - name: formules_titre
+        label: Formules, titre (facultatif)
+        type: string
+      - name: formules_intro
+        label: Formules, introduction
+        type: text
+      - name: formules
+        label: Formules (facultatif)
+        type: object
+        list: true
+        fields:
+          - name: nom
+            label: Nom
+            type: string
+          - name: texte
+            label: Texte
+            type: text
+          - name: mise_en_avant
+            label: Mettre en avant
+            type: boolean
+      - name: etapes
+        label: Étapes
+        type: object
+        list: true
+        fields:
+          - name: titre
+            label: Titre
+            type: string
+          - name: texte
+            label: Texte
+            type: text
+      - name: faq
+        label: Questions fréquentes
+        type: object
+        list: true
+        fields:
+          - name: question
+            label: Question
+            type: string
+          - name: reponse
+            label: Réponse
+            type: text
+      - name: cta_titre
+        label: Bandeau final, titre
+        type: string
+      - name: cta_texte
+        label: Bandeau final, texte
+        type: text

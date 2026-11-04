@@ -1,0 +1,14 @@
+<section class="section section-cta">
+    <div class="wrap">
+      <div class="cta-band">
+        <div>
+          <h2>{{ include.titre }}</h2>
+          <p>{{ include.texte }}</p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-light" href="/{% if include.besoin %}?besoin={{ include.besoin }}{% endif %}#contact">Demander un devis gratuit</a>
+          <a class="btn btn-ghost-light" href="tel:{% include tel.html %}">{{ site.data.reglages.telephone }}</a>
+        </div>
+      </div>
+    </div>
+  </section>
