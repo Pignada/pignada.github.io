@@ -1,6 +1,6 @@
 # quentinbertails.github.io
 
-Site vitrine de Quentin Bertails : création, refonte, maintenance, hébergement et traduction de sites web.
+Site vitrine de Pignada (nom commercial de Quentin Bertails) : création, refonte, maintenance, hébergement et traduction de sites web.
 En ligne sur **https://quentinbertails.github.io**, publié automatiquement par GitHub Pages à chaque modification de la branche `main`.
 
 ## Contenu du dépôt

@@ -1,5 +1,5 @@
 ---
-title: 'Refonte de site internet : moderniser sans repartir de zéro | Quentin Bertails'
+title: 'Refonte de site internet : moderniser sans repartir de zéro | Pignada'
 description: 'Refonte de site internet pour commerces : nouveau design adapté au téléphone, contenus repris et redirections pour garder votre place sur Google. Devis gratuit.'
 nom: Refonte de site internet
 ordre: 2

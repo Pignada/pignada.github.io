@@ -160,7 +160,7 @@ content:
         required: true
       - name: title
         label: Titre pour Google
-        description: Le titre affiché dans les résultats Google (« | Quentin Bertails » est ajouté automatiquement).
+        description: Le titre affiché dans les résultats Google (« | Pignada » est ajouté automatiquement).
         type: string
       - name: titre_court
         label: Titre court

@@ -12,7 +12,7 @@ layout: base
     <header class="wrap article-head">
       <h1>{{ page.titre }}</h1>
       <p class="hero-lead">{{ page.chapo }}</p>
-      <p class="article-meta">Publié le <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%-d" }} {{ mois[m] }} {{ page.date | date: "%Y" }}</time>, par Quentin Bertails. Lecture : {{ minutes }} minutes.</p>
+      <p class="article-meta">Publié le <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%-d" }} {{ mois[m] }} {{ page.date | date: "%Y" }}</time>, par Pignada. Lecture : {{ minutes }} minutes.</p>
     </header>
     <div class="wrap">
       <div class="prose">
@@ -38,7 +38,7 @@ layout: base
 {"@context": "https://schema.org", "@graph": [
   {"@type": "Article", "headline": {{ page.title | jsonify }}, "description": {{ page.description | jsonify }}, "inLanguage": "fr",
    "datePublished": "{{ page.date | date: '%Y-%m-%d' }}", "dateModified": "{{ page.last_modified_at | default: page.date | date: '%Y-%m-%d' }}",
-   "author": {"@type": "Person", "name": "Quentin Bertails", "url": "{{ site.url }}/"}, "publisher": {"@type": "Person", "name": "Quentin Bertails", "url": "{{ site.url }}/"},
+   "author": {"@type": "Organization", "name": "Pignada", "url": "{{ site.url }}/"}, "publisher": {"@type": "Organization", "name": "Pignada", "url": "{{ site.url }}/"},
    "mainEntityOfPage": "{{ site.url }}{{ page.url }}", "image": "{{ site.url }}/assets/og-image.png"},
   {"@type": "BreadcrumbList", "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "{{ site.url }}/"},

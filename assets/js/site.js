@@ -1,4 +1,4 @@
-/* Quentin Bertails — scripts du site (toutes les pages). */
+/* Pignada — scripts du site (toutes les pages). */
 (function () {
   /* L'adresse Formspree se règle dans l'interface d'édition (Réglages du site).
      Vide : le formulaire ouvre la messagerie du visiteur. */
