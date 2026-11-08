@@ -396,6 +396,7 @@ description: Création, refonte, maintenance et hébergement de sites web pour l
 
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@graph": [
+  {"@type": "WebSite", "@id": "{{ site.url }}/#site", "name": "Quentin Bertails", "alternateName": ["Quentin Bertails – Création de sites web", "QB Création web"], "url": "{{ site.url }}/", "inLanguage": "fr"},
   {"@type": "ProfessionalService", "@id": "{{ site.url }}/#entreprise", "name": "Quentin Bertails – Création de sites web",
    "description": "Création, refonte, maintenance et hébergement de sites web pour les commerces locaux.",
    "email": {{ site.data.reglages.email | jsonify }}, "telephone": "{% include tel.html %}", "areaServed": "Landes, France",
