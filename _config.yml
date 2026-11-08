@@ -1,6 +1,6 @@
 # Configuration Jekyll (GitHub Pages construit le site à chaque modification)
 title: Pignada – Création de sites web
-url: https://quentinbertails.github.io
+url: https://pignada.github.io
 lang: fr
 timezone: Europe/Paris
 markdown: kramdown

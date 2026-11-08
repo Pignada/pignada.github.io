@@ -1,7 +1,7 @@
-# quentinbertails.github.io
+# pignada.github.io
 
 Site vitrine de Pignada (nom commercial de Quentin Bertails) : création, refonte, maintenance, hébergement et traduction de sites web.
-En ligne sur **https://quentinbertails.github.io**, publié automatiquement par GitHub Pages à chaque modification de la branche `main`.
+En ligne sur **https://pignada.github.io**, publié automatiquement par GitHub Pages à chaque modification de la branche `main`.
 
 ## Contenu du dépôt
 
@@ -21,8 +21,8 @@ En ligne sur **https://quentinbertails.github.io**, publié automatiquement par 
 
 ### Avec l'interface d'édition (recommandé)
 
-1. Aller sur **https://app.pagescms.org** et se connecter avec le compte GitHub `quentinbertails`.
-2. Autoriser l'accès au dépôt `quentinbertails.github.io`, puis l'ouvrir.
+1. Aller sur **https://app.pagescms.org** et se connecter avec le compte GitHub `Pignada`.
+2. Autoriser l'accès au dépôt `pignada.github.io`, puis l'ouvrir.
 3. Choisir une rubrique dans le menu : Réglages du site, Page d'accueil, Formules, Questions fréquentes, Articles de conseils, Pages services.
 4. Modifier, puis cliquer sur **Save**. Le site se met à jour en une à deux minutes.
 
@@ -52,7 +52,7 @@ La balise `google-site-verification` (dans `_includes/head.html`) ne doit jamais
 - [ ] **Réalisations** : compléter par de vrais sites clients dès qu'ils existent, avec l'accord du client.
 - [ ] **Blade Runner, page Avis** : réécrire le texte avec ton propre ressenti (c'est présenté comme ton avis).
 - [ ] **Google Business Profile** : créer la fiche en « zone desservie » (l'adresse n'est pas affichée).
-- [ ] **Nom de domaine** (facultatif) : après achat, le renseigner dans Settings → Pages → Custom domain, puis remplacer `https://quentinbertails.github.io` dans `_config.yml` et `robots.txt`.
+- [ ] **Nom de domaine** (facultatif) : après achat, le renseigner dans Settings → Pages → Custom domain, puis remplacer `https://pignada.github.io` dans `_config.yml` et `robots.txt`.
 
 ## Identité visuelle
 
